@@ -1,0 +1,49 @@
+{
+  "command": "scripts/extract_query_profiles.py --tag c6_deploy --da none",
+  "timestamp_utc": "2026-08-16T11:52:49.829312+00:00",
+  "seed": 42,
+  "da": "none",
+  "git": {
+    "edge-reliability-gate": "d83c87ea54c77b6f39292d0001b40e306e593330",
+    "plantdiag-edge": "137600cccf78660847cbd3dd36d5d3b6326ec0a3"
+  },
+  "provenance": {
+    "bundle": "/home/nkolesnikov/aspirantura/code/plantdiag-edge/artifacts_pq",
+    "onnx": "/home/nkolesnikov/aspirantura/code/plantdiag-edge/artifacts_pq/c6_mobilenet_v2_int8.onnx",
+    "gallery_db": "/home/nkolesnikov/aspirantura/code/plantdiag-edge/artifacts_pq/gallery/gallery.db",
+    "source_cov": null,
+    "dataset_root": "/home/nkolesnikov/aspirantura/code/plant-disease-eccv2026/data/PlantDoc_raw",
+    "reused_from_plantdiag_edge": [
+      "edge_runtime.ONNXRunner",
+      "domain_adapter.IncrementalCORAL",
+      "polarquant.rfwht",
+      "polarquant.decoder.asymmetric_l2",
+      "polarquant.packing.unpack_codes"
+    ]
+  },
+  "data": {
+    "n_gallery": 272,
+    "n_queries": 2650,
+    "n_classes": 28,
+    "feature_dim": 1280,
+    "padded_dim": 2048
+  },
+  "sanity": {
+    "top1_accuracy": 0.29509433962264153,
+    "macro_recall": 0.2990363653064478,
+    "tie_share_d1_d2": 0.0
+  },
+  "timing_s": {
+    "query_features": 48.64,
+    "distances": 1.59,
+    "total": 56.49
+  },
+  "environment": {
+    "hostname": "nkolesnikov-ubuntu",
+    "platform": "Linux-6.17.0-41-generic-x86_64-with-glibc2.42",
+    "machine": "x86_64",
+    "python": "3.13.7",
+    "numpy": "2.5.2",
+    "onnxruntime": "1.28.0"
+  }
+}

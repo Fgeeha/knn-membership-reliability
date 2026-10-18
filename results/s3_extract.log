@@ -1,0 +1,39 @@
+closed: 1768 images, 13 external classes
+  gallery pool 1415, queries 353, min per class in pool 50
+  extracting onnx_fp32 (1768 images) ...
+    onnx 1280/1768 (88/s)
+    -> (1768, 1280)
+  extracting onnx_int8 (1768 images) ...
+    onnx 1280/1768 (120/s)
+    -> (1768, 1280)
+ood_known_crop: 2824 images, 31 external classes
+  extracting onnx_fp32 (2824 images) ...
+    onnx 1280/2824 (93/s)
+    onnx 2560/2824 (95/s)
+    -> (2824, 1280)
+  extracting onnx_int8 (2824 images) ...
+    onnx 1280/2824 (116/s)
+    onnx 2560/2824 (117/s)
+    -> (2824, 1280)
+ood_unseen_crop: 6580 images, 69 external classes
+  extracting onnx_fp32 (6580 images) ...
+    onnx 1280/6580 (97/s)
+    onnx 2560/6580 (101/s)
+    onnx 3840/6580 (103/s)
+    onnx 5120/6580 (100/s)
+    onnx 6400/6580 (99/s)
+    -> (6580, 1280)
+  extracting onnx_int8 (6580 images) ...
+    onnx 1280/6580 (130/s)
+    onnx 2560/6580 (131/s)
+    onnx 3840/6580 (130/s)
+    onnx 5120/6580 (128/s)
+    onnx 6400/6580 (125/s)
+    -> (6580, 1280)
+author_pending: 316 images, 2 external classes
+  extracting onnx_fp32 (316 images) ...
+    -> (316, 1280)
+  extracting onnx_int8 (316 images) ...
+    -> (316, 1280)
+
+done in 211.0 s -> /home/nkolesnikov/aspirantura/code/edge-reliability-gate/results/s3_features

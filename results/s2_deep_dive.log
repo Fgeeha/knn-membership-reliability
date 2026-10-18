@@ -1,0 +1,62 @@
+
+=== s2_1010  (A=icoral Q=onnx_fp32 G=pq3bit S=source) ===
+  gallery 1853 vectors, ~81 per class
+      k     class_gap   vote_share       neg_d1      z_class   margin_rel
+      1         0.565        0.500        0.587        0.597        0.481
+      3         0.610        0.634        0.587        0.597        0.481
+      5         0.623        0.661        0.587        0.597        0.481
+     10         0.646        0.662        0.587        0.597        0.481
+     20         0.656        0.687        0.587        0.597        0.481
+     50         0.657        0.696        0.587        0.597        0.481
+    100         0.701        0.705        0.587        0.597        0.481
+    200         0.630        0.713        0.587        0.597        0.481
+    500         0.630        0.729        0.587        0.597        0.481
+  per-class class_gap AUROC: 17 classes with enough support, median 0.526, above 0.5 in 9/17
+  class_gap deciles: top 0.277 / overall 0.177 / bottom 0.064
+
+=== ref_fullsrc_fp32_pq  (A=icoral Q=onnx_fp32 G=pq3bit S=source full-source) ===
+  gallery 32605 vectors, ~1418 per class
+      k     class_gap   vote_share       neg_d1      z_class   margin_rel
+      1         0.444        0.500        0.621        0.629        0.497
+      3         0.506        0.539        0.621        0.629        0.497
+      5         0.517        0.585        0.621        0.629        0.497
+     10         0.520        0.584        0.621        0.629        0.497
+     20         0.510        0.560        0.621        0.629        0.497
+     50         0.514        0.555        0.621        0.629        0.497
+    100         0.541        0.567        0.621        0.629        0.497
+    200         0.570        0.595        0.621        0.629        0.497
+    500         0.603        0.636        0.621        0.629        0.497
+  per-class class_gap AUROC: 13 classes with enough support, median 0.491, above 0.5 in 6/13
+  class_gap deciles: top 0.170 / overall 0.159 / bottom 0.085
+
+=== ref_torch_pq_src  (A=icoral Q=torch_fp32 G=pq3bit S=source full-source) ===
+  gallery 32605 vectors, ~1418 per class
+      k     class_gap   vote_share       neg_d1      z_class   margin_rel
+      1         0.509        0.500        0.614        0.637        0.453
+      3         0.530        0.537        0.614        0.637        0.453
+      5         0.535        0.579        0.614        0.637        0.453
+     10         0.532        0.599        0.614        0.637        0.453
+     20         0.530        0.600        0.614        0.637        0.453
+     50         0.544        0.588        0.614        0.637        0.453
+    100         0.572        0.600        0.614        0.637        0.453
+    200         0.622        0.635        0.614        0.637        0.453
+    500         0.667        0.687        0.614        0.637        0.453
+  per-class class_gap AUROC: 12 classes with enough support, median 0.592, above 0.5 in 9/12
+  class_gap deciles: top 0.170 / overall 0.151 / bottom 0.085
+
+=== s2_1011  (A=icoral Q=onnx_fp32 G=pq3bit S=target) ===
+  gallery 1853 vectors, ~81 per class
+      k     class_gap   vote_share       neg_d1      z_class   margin_rel
+      1         0.780        0.500        0.585        0.594        0.712
+      3         0.807        0.720        0.585        0.594        0.712
+      5         0.784        0.751        0.585        0.594        0.712
+     10         0.753        0.746        0.585        0.594        0.712
+     20         0.716        0.747        0.585        0.594        0.712
+     50         0.675        0.720        0.585        0.594        0.712
+    100         0.636        0.704        0.585        0.594        0.712
+    200         0.658        0.684        0.585        0.594        0.712
+    500         0.658        0.667        0.585        0.594        0.712
+  per-class class_gap AUROC: 19 classes with enough support, median 0.583, above 0.5 in 12/19
+  class_gap deciles: top 0.936 / overall 0.455 / bottom 0.106
+
+written -> /home/nkolesnikov/aspirantura/code/edge-reliability-gate/results/s2_deep_dive/deep_dive.json

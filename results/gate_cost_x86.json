@@ -1,0 +1,41 @@
+{
+  "signal": "class_gap",
+  "setting": {
+    "n_gallery": 272,
+    "n_classes": 28,
+    "k": 10,
+    "runs": 1000,
+    "warmup": 100,
+    "seed": 42,
+    "note": "marginal cost only; the kNN distance vector is taken as given"
+  },
+  "latency_ms": {
+    "p50": 0.09550400000080117,
+    "p95": 0.13809594986469165,
+    "mean": 0.10273710699857475,
+    "std": 0.017319797077360664,
+    "min": 0.09318899992649676,
+    "max": 0.22353799977281597
+  },
+  "memory_bytes": {
+    "gallery_statistics": 2352,
+    "note": "mu, sigma and a 19-quantile grid per class, float32"
+  },
+  "budget_check": {
+    "deploy_mb_reference": 2.924,
+    "e2e_p50_ms_reference": 103.32,
+    "added_size_fraction": 0.0008043775649794802,
+    "added_latency_fraction_p50": 0.0009243515292373324,
+    "within_10pct_size": true,
+    "within_10pct_latency": true
+  },
+  "environment": {
+    "hostname": "nkolesnikov-ubuntu",
+    "platform": "Linux-6.17.0-41-generic-x86_64-with-glibc2.42",
+    "machine": "x86_64",
+    "processor": "",
+    "python": "3.13.7",
+    "numpy": "2.5.2"
+  },
+  "timestamp_utc": "2026-08-16T11:53:54.333136+00:00"
+}

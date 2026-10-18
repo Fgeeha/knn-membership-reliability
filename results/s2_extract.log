@@ -1,0 +1,107 @@
+src: 32605 images
+tgt_tr: 1853 images
+tgt_val: 464 images
+  extracting torch_fp32 for src (32605 images) ...
+    torch 1280/32605 (1453/s)
+    torch 2560/32605 (1882/s)
+    torch 3840/32605 (2086/s)
+    torch 5120/32605 (2184/s)
+    torch 6400/32605 (2269/s)
+    torch 7680/32605 (2334/s)
+    torch 8960/32605 (2384/s)
+    torch 10240/32605 (2419/s)
+    torch 11520/32605 (2443/s)
+    torch 12800/32605 (2455/s)
+    torch 14080/32605 (2470/s)
+    torch 15360/32605 (2483/s)
+    torch 16640/32605 (2495/s)
+    torch 17920/32605 (2505/s)
+    torch 19200/32605 (2512/s)
+    torch 20480/32605 (2519/s)
+    torch 21760/32605 (2528/s)
+    torch 23040/32605 (2537/s)
+    torch 24320/32605 (2546/s)
+    torch 25600/32605 (2554/s)
+    torch 26880/32605 (2560/s)
+    torch 28160/32605 (2564/s)
+    torch 29440/32605 (2569/s)
+    torch 30720/32605 (2573/s)
+    torch 32000/32605 (2577/s)
+    -> (32605, 1280) in 12.8 s
+  extracting torch_fp32 for tgt_tr (1853 images) ...
+    torch 1280/1853 (380/s)
+    -> (1853, 1280) in 3.7 s
+  extracting torch_fp32 for tgt_val (464 images) ...
+    -> (464, 1280) in 1.2 s
+  extracting onnx_fp32 for src (32605 images) ...
+    onnx 1280/32605 (245/s)
+    onnx 2560/32605 (245/s)
+    onnx 3840/32605 (239/s)
+    onnx 5120/32605 (233/s)
+    onnx 6400/32605 (234/s)
+    onnx 7680/32605 (234/s)
+    onnx 8960/32605 (236/s)
+    onnx 10240/32605 (236/s)
+    onnx 11520/32605 (235/s)
+    onnx 12800/32605 (235/s)
+    onnx 14080/32605 (234/s)
+    onnx 15360/32605 (233/s)
+    onnx 16640/32605 (232/s)
+    onnx 17920/32605 (230/s)
+    onnx 19200/32605 (230/s)
+    onnx 20480/32605 (232/s)
+    onnx 21760/32605 (232/s)
+    onnx 23040/32605 (232/s)
+    onnx 24320/32605 (232/s)
+    onnx 25600/32605 (231/s)
+    onnx 26880/32605 (231/s)
+    onnx 28160/32605 (230/s)
+    onnx 29440/32605 (230/s)
+    onnx 30720/32605 (230/s)
+    onnx 32000/32605 (230/s)
+    -> (32605, 1280) in 141.7 s
+  extracting onnx_fp32 for tgt_tr (1853 images) ...
+    onnx 1280/1853 (64/s)
+    -> (1853, 1280) in 26.4 s
+  extracting onnx_fp32 for tgt_val (464 images) ...
+    -> (464, 1280) in 6.8 s
+  extracting onnx_int8 for src (32605 images) ...
+    onnx 1280/32605 (391/s)
+    onnx 2560/32605 (405/s)
+    onnx 3840/32605 (366/s)
+    onnx 5120/32605 (382/s)
+    onnx 6400/32605 (384/s)
+    onnx 7680/32605 (392/s)
+    onnx 8960/32605 (392/s)
+    onnx 10240/32605 (397/s)
+    onnx 11520/32605 (396/s)
+    onnx 12800/32605 (399/s)
+    onnx 14080/32605 (398/s)
+    onnx 15360/32605 (396/s)
+    onnx 16640/32605 (400/s)
+    onnx 17920/32605 (401/s)
+    onnx 19200/32605 (405/s)
+    onnx 20480/32605 (401/s)
+    onnx 21760/32605 (405/s)
+    onnx 23040/32605 (405/s)
+    onnx 24320/32605 (408/s)
+    onnx 25600/32605 (411/s)
+    onnx 26880/32605 (412/s)
+    onnx 28160/32605 (414/s)
+    onnx 29440/32605 (413/s)
+    onnx 30720/32605 (416/s)
+    onnx 32000/32605 (416/s)
+    -> (32605, 1280) in 78.3 s
+  extracting onnx_int8 for tgt_tr (1853 images) ...
+    onnx 1280/1853 (74/s)
+    -> (1853, 1280) in 22.9 s
+  extracting onnx_int8 for tgt_val (464 images) ...
+    -> (464, 1280) in 6.0 s
+
+quantize_dynamic degeneracy check:
+  mobilenet_v2: 0 quantized modules, 9.032 -> 9.032 MB, identical=True
+  resnet50: 0 quantized modules, 94.245 -> 94.245 MB, identical=True
+onnx_fp32_vs_onnx_int8: cosine mean 0.9779 min 0.9519
+torch_fp32_vs_onnx_fp32: cosine mean 0.9941 min 0.9837
+
+done in 300.4 s -> /home/nkolesnikov/aspirantura/code/edge-reliability-gate/results/s2_features

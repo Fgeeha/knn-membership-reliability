@@ -1,0 +1,201 @@
+{
+  "command": "scripts/s4_extract_features_c4.py",
+  "timestamp_utc": "2026-08-17T11:38:46.374081+00:00",
+  "git": {
+    "edge-reliability-gate": "e1cf3531c90762c76f9c3a9845e40b1651914dd4",
+    "plantdiag-edge": "e6ee3a5cbc70b7a379e6951a997601d1d7598d6e"
+  },
+  "models": {
+    "onnx_fp32": {
+      "path": "/home/nkolesnikov/aspirantura/code/plantdiag-edge/artifacts_c4_pq/c4_resnet50_fp32.onnx",
+      "sha256": "b2eac61a3acc8f552358293673d63956e6c02524f8429b0109c2d8c7481b0673"
+    },
+    "onnx_int8": {
+      "path": "/home/nkolesnikov/aspirantura/code/plantdiag-edge/artifacts_c4_pq/c4_resnet50_int8.onnx",
+      "sha256": "674dd91065b69256925814313ffda441f859131c13dbdbb9afcca1ccae544365"
+    }
+  },
+  "image_lists": "verbatim from s2_features/s3_features paths.json (same order)",
+  "preprocessing": "identical to s2_extract_features.extract_onnx",
+  "groups": {
+    "src": {
+      "n_images": 32605
+    },
+    "tgt_tr": {
+      "n_images": 1853
+    },
+    "tgt_val": {
+      "n_images": 464
+    },
+    "closed": {
+      "n_images": 1768
+    },
+    "ood_known_crop": {
+      "n_images": 2824
+    },
+    "ood_unseen_crop": {
+      "n_images": 6580
+    }
+  },
+  "caches": {
+    "closed_labels.npy": {
+      "shape": [
+        1768
+      ],
+      "dtype": "int32",
+      "sha256": "8cd59d1e4be6a13a0e781d5d5efa459bce4aa3c1aba686506acadcf28c21b361"
+    },
+    "closed_onnx_fp32.npy": {
+      "shape": [
+        1768,
+        2048
+      ],
+      "dtype": "float32",
+      "sha256": "b33c0beca428f562f52e41d89e1683c4d94879c5f60b0c19124f8c23ba22789e"
+    },
+    "closed_onnx_int8.npy": {
+      "shape": [
+        1768,
+        2048
+      ],
+      "dtype": "float32",
+      "sha256": "f0a3cb0b2bfc8c51d58a4e2ac913a02e0267479825c96f4a5666130f4d8a7b0c"
+    },
+    "closed_query_idx.npy": {
+      "shape": [
+        353
+      ],
+      "dtype": "int32",
+      "sha256": "16dda91577c6e9c216f8546b7573ca75fcb968eb0e56e633315e1b04f5a99f7d"
+    },
+    "closed_train_idx.npy": {
+      "shape": [
+        1415
+      ],
+      "dtype": "int32",
+      "sha256": "0458ae97edea1e7917c2ef43a58db0c3fce97a616f3a4a880a9497a158d42871"
+    },
+    "ood_known_crop_labels.npy": {
+      "shape": [
+        2824
+      ],
+      "dtype": "int32",
+      "sha256": "6bc1eed0a9d1c1542b1c4c39a9b706294e3fbcebbcc0db09813224b978630d30"
+    },
+    "ood_known_crop_onnx_fp32.npy": {
+      "shape": [
+        2824,
+        2048
+      ],
+      "dtype": "float32",
+      "sha256": "9599e471a2041ada8769fc749deec16776411f88d0cff133b3b39c484dfa73bc"
+    },
+    "ood_known_crop_onnx_int8.npy": {
+      "shape": [
+        2824,
+        2048
+      ],
+      "dtype": "float32",
+      "sha256": "4324df4d857351f117926d2acd88d752913e947eeaa3b9855875ad0f7ba51da5"
+    },
+    "ood_unseen_crop_labels.npy": {
+      "shape": [
+        6580
+      ],
+      "dtype": "int32",
+      "sha256": "52ae4f180eae4cfe087be42237797967f964f9462de1a052ee8b6083e76ab97d"
+    },
+    "ood_unseen_crop_onnx_fp32.npy": {
+      "shape": [
+        6580,
+        2048
+      ],
+      "dtype": "float32",
+      "sha256": "3b33b754cc558f56f5d2202193b16121f4e651d61278682cd0d14046451b54cf"
+    },
+    "ood_unseen_crop_onnx_int8.npy": {
+      "shape": [
+        6580,
+        2048
+      ],
+      "dtype": "float32",
+      "sha256": "ac042095df73dd6bdbbcba7f4026368f43251262ee686b259f466f73e67b5c79"
+    },
+    "src_labels.npy": {
+      "shape": [
+        32605
+      ],
+      "dtype": "int32",
+      "sha256": "503904cb5b2c34d5d9b3ed0fd81547df4f05ed66dcbdacc041baeb332cd51dfb"
+    },
+    "src_onnx_fp32.npy": {
+      "shape": [
+        32605,
+        2048
+      ],
+      "dtype": "float32",
+      "sha256": "58ba16ce86b53519b299e7113fbbd901020be3297daef1905f518f1b22ecc089"
+    },
+    "src_onnx_int8.npy": {
+      "shape": [
+        32605,
+        2048
+      ],
+      "dtype": "float32",
+      "sha256": "def5d88d20cb4b50237af19dfedc5d3f03ee90d8e2b784b1743182d640f4434d"
+    },
+    "tgt_tr_labels.npy": {
+      "shape": [
+        1853
+      ],
+      "dtype": "int32",
+      "sha256": "dfe01689050f19680f9c07a8fd529890a777c8c16bbaca6ff35b1aa152450421"
+    },
+    "tgt_tr_onnx_fp32.npy": {
+      "shape": [
+        1853,
+        2048
+      ],
+      "dtype": "float32",
+      "sha256": "63a5db75b574f41c806ace0803bb1325e0924b8d1e6ef257855dcb0bb0c79996"
+    },
+    "tgt_tr_onnx_int8.npy": {
+      "shape": [
+        1853,
+        2048
+      ],
+      "dtype": "float32",
+      "sha256": "b6fb17f88c30ca2ef4a1274dbf5eb8d4741983cc3370ca9993b896e3dd7d4ede"
+    },
+    "tgt_val_labels.npy": {
+      "shape": [
+        464
+      ],
+      "dtype": "int32",
+      "sha256": "9d87a4f9e82dec14393346ccc159abe877e5a442eee7184b6efc1f97a77ae648"
+    },
+    "tgt_val_onnx_fp32.npy": {
+      "shape": [
+        464,
+        2048
+      ],
+      "dtype": "float32",
+      "sha256": "8b4a9d7bacc6dbc100d07aa7043a1ef3bf5335378e7579fab392b48685bdc7c5"
+    },
+    "tgt_val_onnx_int8.npy": {
+      "shape": [
+        464,
+        2048
+      ],
+      "dtype": "float32",
+      "sha256": "034e52718b740952bddcf1b92cc8d177954d8b4f3481b99272f13ef9871b6c09"
+    }
+  },
+  "wall_s": 1591.2,
+  "environment": {
+    "hostname": "nkolesnikov-ubuntu",
+    "platform": "Linux-6.17.0-41-generic-x86_64-with-glibc2.42",
+    "python": "3.13.7",
+    "numpy": "2.5.2"
+  }
+}

@@ -1,0 +1,497 @@
+{
+  "gallery": "plantwild",
+  "signal": "class_gap",
+  "fset": "onnx_fp32",
+  "min_n_per_class_declared": 25,
+  "n_queries": 353,
+  "classes_meeting_floor": 7,
+  "classes_below_floor": 6,
+  "note": "per-class figures use the full query set; only the signal direction comes from the tuning half, so the estimate is not halved",
+  "per_class": {
+    "Apple_Scab_Leaf": {
+      "n_queries": 52,
+      "meets_floor": true,
+      "recall": {
+        "mean": 0.4692307692307692,
+        "std": 0.06744491506442378,
+        "ci95": [
+          0.4115384615384615,
+          0.5153846153846153
+        ],
+        "per_seed": [
+          0.5,
+          0.5,
+          0.36538461538461536,
+          0.5384615384615384,
+          0.4423076923076923
+        ]
+      },
+      "auroc": {
+        "mean": 0.7857158642288218,
+        "std": 0.051046374056839906,
+        "ci95": [
+          0.7466045706640869,
+          0.8261294991768697
+        ],
+        "per_seed": [
+          0.8550295857988166,
+          0.7855029585798816,
+          0.722488038277512,
+          0.7544642857142857,
+          0.8110944527736131
+        ]
+      }
+    },
+    "Bell_pepper_leaf_spot": {
+      "n_queries": 15,
+      "meets_floor": false,
+      "recall": {
+        "mean": 0.5066666666666667,
+        "std": 0.059628479399994376,
+        "ci95": [
+          0.4666666666666667,
+          0.5599999999999999
+        ],
+        "per_seed": [
+          0.5333333333333333,
+          0.4666666666666667,
+          0.4666666666666667,
+          0.6,
+          0.4666666666666667
+        ]
+      },
+      "auroc": null
+    },
+    "Corn_Gray_leaf_spot": {
+      "n_queries": 21,
+      "meets_floor": false,
+      "recall": {
+        "mean": 0.7999999999999999,
+        "std": 0.07063046178186347,
+        "ci95": [
+          0.7523809523809524,
+          0.8571428571428571
+        ],
+        "per_seed": [
+          0.7142857142857143,
+          0.8095238095238095,
+          0.7619047619047619,
+          0.8095238095238095,
+          0.9047619047619048
+        ]
+      },
+      "auroc": null
+    },
+    "Corn_leaf_blight": {
+      "n_queries": 26,
+      "meets_floor": true,
+      "recall": {
+        "mean": 0.5384615384615384,
+        "std": 0.04710557197659959,
+        "ci95": [
+          0.5076923076923077,
+          0.5769230769230769
+        ],
+        "per_seed": [
+          0.5,
+          0.5,
+          0.5384615384615384,
+          0.5384615384615384,
+          0.6153846153846154
+        ]
+      },
+      "auroc": {
+        "mean": 0.7031709636517329,
+        "std": 0.15997430467855014,
+        "ci95": [
+          0.579404761904762,
+          0.8269371653987039
+        ],
+        "per_seed": [
+          0.8757396449704142,
+          0.8106508875739645,
+          0.7619047619047619,
+          0.5238095238095238,
+          0.54375
+        ]
+      }
+    },
+    "Potato_leaf_early_blight": {
+      "n_queries": 25,
+      "meets_floor": true,
+      "recall": {
+        "mean": 0.296,
+        "std": 0.06693280212272602,
+        "ci95": [
+          0.248,
+          0.344
+        ],
+        "per_seed": [
+          0.36,
+          0.36,
+          0.28,
+          0.28,
+          0.2
+        ]
+      },
+      "auroc": {
+        "mean": 0.45813492063492056,
+        "std": 0.13488853493025693,
+        "ci95": [
+          0.36626984126984125,
+          0.5708333333333334
+        ],
+        "per_seed": [
+          0.6736111111111112,
+          0.4027777777777778,
+          0.38095238095238093,
+          0.3333333333333333,
+          0.5
+        ]
+      }
+    },
+    "Potato_leaf_late_blight": {
+      "n_queries": 23,
+      "meets_floor": false,
+      "recall": {
+        "mean": 0.4695652173913044,
+        "std": 0.17767666731915263,
+        "ci95": [
+          0.3739130434782608,
+          0.6260869565217392
+        ],
+        "per_seed": [
+          0.391304347826087,
+          0.391304347826087,
+          0.34782608695652173,
+          0.782608695652174,
+          0.43478260869565216
+        ]
+      },
+      "auroc": null
+    },
+    "Squash_Powdery_mildew_leaf": {
+      "n_queries": 36,
+      "meets_floor": true,
+      "recall": {
+        "mean": 0.7055555555555555,
+        "std": 0.042127085800286415,
+        "ci95": [
+          0.6722222222222222,
+          0.7388888888888889
+        ],
+        "per_seed": [
+          0.6666666666666666,
+          0.75,
+          0.75,
+          0.6944444444444444,
+          0.6666666666666666
+        ]
+      },
+      "auroc": {
+        "mean": 0.8954623082678639,
+        "std": 0.1374649042336686,
+        "ci95": [
+          0.7748385708941264,
+          0.9851594650205762
+        ],
+        "per_seed": [
+          0.8819444444444444,
+          0.9958847736625515,
+          1.0,
+          0.6654545454545454,
+          0.9340277777777778
+        ]
+      }
+    },
+    "Tomato_Early_blight_leaf": {
+      "n_queries": 37,
+      "meets_floor": true,
+      "recall": {
+        "mean": 0.24324324324324326,
+        "std": 0.1162476387438193,
+        "ci95": [
+          0.15135135135135136,
+          0.33513513513513515
+        ],
+        "per_seed": [
+          0.10810810810810811,
+          0.35135135135135137,
+          0.35135135135135137,
+          0.2702702702702703,
+          0.13513513513513514
+        ]
+      },
+      "auroc": {
+        "mean": 0.5164028101528102,
+        "std": 0.14784451805003299,
+        "ci95": [
+          0.4210576923076923,
+          0.6487205387205386
+        ],
+        "per_seed": [
+          0.7651515151515151,
+          0.5192307692307693,
+          0.4423076923076923,
+          0.4740740740740741,
+          0.38125
+        ]
+      }
+    },
+    "Tomato_leaf_bacterial_spot": {
+      "n_queries": 22,
+      "meets_floor": false,
+      "recall": {
+        "mean": 0.37272727272727274,
+        "std": 0.09315409787236,
+        "ci95": [
+          0.3,
+          0.44545454545454544
+        ],
+        "per_seed": [
+          0.2727272727272727,
+          0.2727272727272727,
+          0.45454545454545453,
+          0.4090909090909091,
+          0.45454545454545453
+        ]
+      },
+      "auroc": null
+    },
+    "Tomato_leaf_late_blight": {
+      "n_queries": 33,
+      "meets_floor": true,
+      "recall": {
+        "mean": 0.2909090909090909,
+        "std": 0.1084154170908989,
+        "ci95": [
+          0.2060606060606061,
+          0.3757575757575758
+        ],
+        "per_seed": [
+          0.18181818181818182,
+          0.36363636363636365,
+          0.42424242424242425,
+          0.30303030303030304,
+          0.18181818181818182
+        ]
+      },
+      "auroc": {
+        "mean": 0.6006222884102366,
+        "std": 0.09775236919047128,
+        "ci95": [
+          0.5221444109468518,
+          0.6704585537918871
+        ],
+        "per_seed": [
+          0.6790123456790124,
+          0.5992063492063492,
+          0.575187969924812,
+          0.45217391304347826,
+          0.6975308641975309
+        ]
+      }
+    },
+    "Tomato_leaf_mosaic_virus": {
+      "n_queries": 13,
+      "meets_floor": false,
+      "recall": {
+        "mean": 0.3846153846153846,
+        "std": 0.10878565864408424,
+        "ci95": [
+          0.2923076923076923,
+          0.46153846153846156
+        ],
+        "per_seed": [
+          0.23076923076923078,
+          0.46153846153846156,
+          0.46153846153846156,
+          0.3076923076923077,
+          0.46153846153846156
+        ]
+      },
+      "auroc": null
+    },
+    "Tomato_leaf_yellow_virus": {
+      "n_queries": 19,
+      "meets_floor": false,
+      "recall": {
+        "mean": 0.42105263157894735,
+        "std": 0.05263157894736842,
+        "ci95": [
+          0.37894736842105264,
+          0.46315789473684205
+        ],
+        "per_seed": [
+          0.3684210526315789,
+          0.3684210526315789,
+          0.47368421052631576,
+          0.47368421052631576,
+          0.42105263157894735
+        ]
+      },
+      "auroc": null
+    },
+    "Tomato_mold_leaf": {
+      "n_queries": 31,
+      "meets_floor": true,
+      "recall": {
+        "mean": 0.5806451612903225,
+        "std": 0.05100447838981258,
+        "ci95": [
+          0.5419354838709677,
+          0.6193548387096774
+        ],
+        "per_seed": [
+          0.5161290322580645,
+          0.5483870967741935,
+          0.6129032258064516,
+          0.6451612903225806,
+          0.5806451612903226
+        ]
+      },
+      "auroc": {
+        "mean": 0.8734132843420769,
+        "std": 0.08216941873433878,
+        "ci95": [
+          0.8134412955465589,
+          0.9433572619331132
+        ],
+        "per_seed": [
+          0.7666666666666667,
+          0.9831932773109243,
+          0.9210526315789473,
+          0.85,
+          0.8461538461538461
+        ]
+      }
+    }
+  },
+  "failure_groups": [
+    {
+      "group": "high_membership_wrong",
+      "n": 24,
+      "crops": {
+        "tomato": 14,
+        "potato": 7,
+        "squash": 3
+      },
+      "true_classes": {
+        "Potato_leaf_early_blight": 5,
+        "Tomato_Early_blight_leaf": 5,
+        "Tomato_leaf_yellow_virus": 5,
+        "Squash_Powdery_mildew_leaf": 3,
+        "Potato_leaf_late_blight": 2
+      },
+      "predicted_classes": {
+        "Potato_leaf_late_blight": 11,
+        "Potato_leaf_early_blight": 6,
+        "Tomato_leaf_mosaic_virus": 4,
+        "Tomato_Early_blight_leaf": 2,
+        "Tomato_mold_leaf": 1
+      },
+      "nearest_is_true_class_share": 0.0,
+      "d1_median": 132.40661724596103,
+      "d1_median_all": 252.04308210540887
+    },
+    {
+      "group": "low_membership_correct",
+      "n": 19,
+      "crops": {
+        "apple": 9,
+        "tomato": 6,
+        "corn": 3,
+        "potato": 1
+      },
+      "true_classes": {
+        "Apple_Scab_Leaf": 9,
+        "Tomato_Early_blight_leaf": 3,
+        "Corn_Gray_leaf_spot": 2,
+        "Tomato_leaf_late_blight": 2,
+        "Corn_leaf_blight": 1
+      },
+      "predicted_classes": {
+        "Apple_Scab_Leaf": 9,
+        "Tomato_Early_blight_leaf": 3,
+        "Corn_Gray_leaf_spot": 2,
+        "Tomato_leaf_late_blight": 2,
+        "Corn_leaf_blight": 1
+      },
+      "nearest_is_true_class_share": 1.0,
+      "d1_median": 412.0794887013848,
+      "d1_median_all": 252.04308210540887
+    },
+    {
+      "group": "high_reliability_wrong",
+      "n": 6,
+      "crops": {
+        "corn": 2,
+        "tomato": 2,
+        "apple": 1,
+        "potato": 1
+      },
+      "true_classes": {
+        "Corn_leaf_blight": 2,
+        "Apple_Scab_Leaf": 1,
+        "Potato_leaf_early_blight": 1,
+        "Tomato_leaf_late_blight": 1,
+        "Tomato_mold_leaf": 1
+      },
+      "predicted_classes": {
+        "Potato_leaf_late_blight": 4,
+        "Corn_Gray_leaf_spot": 2
+      },
+      "nearest_is_true_class_share": 0.0,
+      "d1_median": 159.56660516886623,
+      "d1_median_all": 252.04308210540887
+    },
+    {
+      "group": "low_reliability_correct",
+      "n": 5,
+      "crops": {
+        "apple": 2,
+        "bell": 1,
+        "corn": 1,
+        "tomato": 1
+      },
+      "true_classes": {
+        "Apple_Scab_Leaf": 2,
+        "Bell_pepper_leaf_spot": 1,
+        "Corn_leaf_blight": 1,
+        "Tomato_Early_blight_leaf": 1
+      },
+      "predicted_classes": {
+        "Apple_Scab_Leaf": 2,
+        "Bell_pepper_leaf_spot": 1,
+        "Corn_leaf_blight": 1,
+        "Tomato_Early_blight_leaf": 1
+      },
+      "nearest_is_true_class_share": 1.0,
+      "d1_median": 164.7414888580734,
+      "d1_median_all": 252.04308210540887
+    }
+  ],
+  "meta": {
+    "command": "scripts/s3_per_class_failures.py",
+    "timestamp_utc": "2026-08-16T20:00:34.222608+00:00",
+    "git": {
+      "edge-reliability-gate": "ad110977c6d1a87cf8de8b88aea66c021e9a93e5"
+    },
+    "alignment": {
+      "version": "s3-alignment-v1",
+      "sha256": "6b10c8a6974f5ff5256418860089df0c5c00adaed30c833e0b60acd41e5cd0d0"
+    },
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      42
+    ],
+    "wall_s": 0.9,
+    "environment": {
+      "python": "3.13.7",
+      "numpy": "2.5.2"
+    }
+  }
+}

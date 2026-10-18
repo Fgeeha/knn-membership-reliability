@@ -1,0 +1,22 @@
+[1/6] gallery <- /home/nkolesnikov/aspirantura/code/plantdiag-edge/artifacts_pq
+      272 entries, 28 classes, padded dim 2048
+[2/6] query set <- /home/nkolesnikov/aspirantura/code/plant-disease-eccv2026/data/PlantDoc_raw
+      2650 queries (gallery images excluded)
+[3/6] features <- c6_mobilenet_v2_int8.onnx
+  250/2650 images  (43.8/s)
+  500/2650 images  (44.0/s)
+  750/2650 images  (47.9/s)
+  1000/2650 images  (50.1/s)
+  1250/2650 images  (55.2/s)
+  1500/2650 images  (51.9/s)
+  1750/2650 images  (52.3/s)
+  2000/2650 images  (52.7/s)
+  2250/2650 images  (56.2/s)
+  2500/2650 images  (53.9/s)
+[4/6] domain adaptation: none
+[5/6] distance profiles
+[6/6] writing -> /home/nkolesnikov/aspirantura/code/edge-reliability-gate/results/profiles_c6_deploy_none_20260816_115153
+
+top-1 accuracy 0.2951   macro-recall 0.2990
+tie share (d1 == d2) 0.0000
+done in 56.5 s -> /home/nkolesnikov/aspirantura/code/edge-reliability-gate/results/profiles_c6_deploy_none_20260816_115153

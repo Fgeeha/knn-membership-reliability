@@ -1,0 +1,5853 @@
+{
+  "hypothesis": "H7 (S4_PREREGISTRATION.md)",
+  "signal": "neg_d1",
+  "criteria": {
+    "in_space_acceptance": 0.9,
+    "far_ood_rejection": 0.5,
+    "near_ood_expected_below": 0.2,
+    "reading": "conservative: both gallery domains must pass"
+  },
+  "quantile_grid": [
+    0.01,
+    0.02,
+    0.03,
+    0.04,
+    0.05,
+    0.06,
+    0.07,
+    0.08,
+    0.09,
+    0.1,
+    0.11,
+    0.12,
+    0.13,
+    0.14,
+    0.15,
+    0.16,
+    0.17,
+    0.18,
+    0.19,
+    0.2,
+    0.21,
+    0.22,
+    0.23,
+    0.24,
+    0.25,
+    0.26,
+    0.27,
+    0.28,
+    0.29,
+    0.3,
+    0.31,
+    0.32,
+    0.33,
+    0.34,
+    0.35,
+    0.36,
+    0.37,
+    0.38,
+    0.39,
+    0.4,
+    0.41,
+    0.42,
+    0.43,
+    0.44,
+    0.45,
+    0.46,
+    0.47,
+    0.48,
+    0.49,
+    0.5
+  ],
+  "k": 10,
+  "configs": {
+    "s2_1011": {
+      "factors": {
+        "A": "icoral",
+        "Q": "onnx_fp32",
+        "G": "pq3bit",
+        "S": "target"
+      },
+      "seeds_with_feasible_point": "0/5",
+      "h7_main": false,
+      "near_ood_rejection_at_best": {
+        "per_seed": [],
+        "mean": null,
+        "below_020_all": null
+      },
+      "best_points_per_seed": [],
+      "per_seed": [
+        {
+          "seed": 0,
+          "n_tune": 232,
+          "n_eval": 232,
+          "n_ood": {
+            "beans": 1200,
+            "fcdd_apple": 400,
+            "fcdd_other": 1200
+          },
+          "operating_curve": [
+            {
+              "q": 0.01,
+              "threshold": -525.6581080200428,
+              "in_space_acceptance": 0.9956896551724138,
+              "rejection": {
+                "beans": 0.0,
+                "fcdd_apple": 0.0125,
+                "fcdd_other": 0.0025
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.02,
+              "threshold": -412.58519001951373,
+              "in_space_acceptance": 0.978448275862069,
+              "rejection": {
+                "beans": 0.01,
+                "fcdd_apple": 0.1225,
+                "fcdd_other": 0.0575
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.03,
+              "threshold": -395.8345814411935,
+              "in_space_acceptance": 0.9741379310344828,
+              "rejection": {
+                "beans": 0.013333333333333334,
+                "fcdd_apple": 0.165,
+                "fcdd_other": 0.09666666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.04,
+              "threshold": -373.02933489504824,
+              "in_space_acceptance": 0.9525862068965517,
+              "rejection": {
+                "beans": 0.028333333333333332,
+                "fcdd_apple": 0.225,
+                "fcdd_other": 0.17083333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.05,
+              "threshold": -359.60445584049023,
+              "in_space_acceptance": 0.9396551724137931,
+              "rejection": {
+                "beans": 0.04,
+                "fcdd_apple": 0.2775,
+                "fcdd_other": 0.22416666666666665
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.06,
+              "threshold": -339.44778547653993,
+              "in_space_acceptance": 0.9353448275862069,
+              "rejection": {
+                "beans": 0.07,
+                "fcdd_apple": 0.3575,
+                "fcdd_other": 0.32
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.07,
+              "threshold": -335.77020870825237,
+              "in_space_acceptance": 0.9310344827586207,
+              "rejection": {
+                "beans": 0.075,
+                "fcdd_apple": 0.385,
+                "fcdd_other": 0.3325
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.08,
+              "threshold": -330.1532604159067,
+              "in_space_acceptance": 0.9224137931034483,
+              "rejection": {
+                "beans": 0.0875,
+                "fcdd_apple": 0.41,
+                "fcdd_other": 0.3625
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.09,
+              "threshold": -326.0348657595557,
+              "in_space_acceptance": 0.9137931034482759,
+              "rejection": {
+                "beans": 0.09916666666666667,
+                "fcdd_apple": 0.4325,
+                "fcdd_other": 0.37833333333333335
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.1,
+              "threshold": -323.31192747091364,
+              "in_space_acceptance": 0.9137931034482759,
+              "rejection": {
+                "beans": 0.10833333333333334,
+                "fcdd_apple": 0.45,
+                "fcdd_other": 0.39
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.11,
+              "threshold": -318.4450887073318,
+              "in_space_acceptance": 0.9094827586206896,
+              "rejection": {
+                "beans": 0.11666666666666667,
+                "fcdd_apple": 0.49,
+                "fcdd_other": 0.4225
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.12,
+              "threshold": -314.79343882460137,
+              "in_space_acceptance": 0.9051724137931034,
+              "rejection": {
+                "beans": 0.12333333333333334,
+                "fcdd_apple": 0.5075,
+                "fcdd_other": 0.435
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.13,
+              "threshold": -310.0735118644039,
+              "in_space_acceptance": 0.9051724137931034,
+              "rejection": {
+                "beans": 0.13916666666666666,
+                "fcdd_apple": 0.525,
+                "fcdd_other": 0.4625
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.14,
+              "threshold": -306.3092187168539,
+              "in_space_acceptance": 0.9008620689655172,
+              "rejection": {
+                "beans": 0.15083333333333335,
+                "fcdd_apple": 0.535,
+                "fcdd_other": 0.49
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.15,
+              "threshold": -286.38958642310126,
+              "in_space_acceptance": 0.8663793103448276,
+              "rejection": {
+                "beans": 0.22833333333333333,
+                "fcdd_apple": 0.635,
+                "fcdd_other": 0.5908333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.16,
+              "threshold": -276.2316649337609,
+              "in_space_acceptance": 0.8448275862068966,
+              "rejection": {
+                "beans": 0.2725,
+                "fcdd_apple": 0.7125,
+                "fcdd_other": 0.6541666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.17,
+              "threshold": -273.63978524141623,
+              "in_space_acceptance": 0.8405172413793104,
+              "rejection": {
+                "beans": 0.2816666666666667,
+                "fcdd_apple": 0.72,
+                "fcdd_other": 0.6683333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.18,
+              "threshold": -268.3361629103648,
+              "in_space_acceptance": 0.8275862068965517,
+              "rejection": {
+                "beans": 0.3016666666666667,
+                "fcdd_apple": 0.755,
+                "fcdd_other": 0.7
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.19,
+              "threshold": -257.58336577860615,
+              "in_space_acceptance": 0.8017241379310345,
+              "rejection": {
+                "beans": 0.35,
+                "fcdd_apple": 0.8075,
+                "fcdd_other": 0.7591666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.2,
+              "threshold": -255.12938487668097,
+              "in_space_acceptance": 0.7931034482758621,
+              "rejection": {
+                "beans": 0.36,
+                "fcdd_apple": 0.82,
+                "fcdd_other": 0.7733333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.21,
+              "threshold": -253.88196474151815,
+              "in_space_acceptance": 0.7887931034482759,
+              "rejection": {
+                "beans": 0.36666666666666664,
+                "fcdd_apple": 0.8275,
+                "fcdd_other": 0.78
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.22,
+              "threshold": -249.91905928429236,
+              "in_space_acceptance": 0.7758620689655172,
+              "rejection": {
+                "beans": 0.38666666666666666,
+                "fcdd_apple": 0.8425,
+                "fcdd_other": 0.7958333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.23,
+              "threshold": -249.10811032477122,
+              "in_space_acceptance": 0.7758620689655172,
+              "rejection": {
+                "beans": 0.3933333333333333,
+                "fcdd_apple": 0.8525,
+                "fcdd_other": 0.8
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.24,
+              "threshold": -244.88931550920125,
+              "in_space_acceptance": 0.7586206896551724,
+              "rejection": {
+                "beans": 0.4141666666666667,
+                "fcdd_apple": 0.88,
+                "fcdd_other": 0.8158333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.25,
+              "threshold": -241.7481365559035,
+              "in_space_acceptance": 0.75,
+              "rejection": {
+                "beans": 0.43,
+                "fcdd_apple": 0.8875,
+                "fcdd_other": 0.8316666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.26,
+              "threshold": -240.49739547446126,
+              "in_space_acceptance": 0.7456896551724138,
+              "rejection": {
+                "beans": 0.44,
+                "fcdd_apple": 0.8925,
+                "fcdd_other": 0.835
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.27,
+              "threshold": -237.5339148534432,
+              "in_space_acceptance": 0.7327586206896551,
+              "rejection": {
+                "beans": 0.4533333333333333,
+                "fcdd_apple": 0.905,
+                "fcdd_other": 0.8508333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.28,
+              "threshold": -235.4787186520154,
+              "in_space_acceptance": 0.7241379310344828,
+              "rejection": {
+                "beans": 0.47,
+                "fcdd_apple": 0.9125,
+                "fcdd_other": 0.8625
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.29,
+              "threshold": -233.13687433805507,
+              "in_space_acceptance": 0.7198275862068966,
+              "rejection": {
+                "beans": 0.4825,
+                "fcdd_apple": 0.9225,
+                "fcdd_other": 0.8733333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.3,
+              "threshold": -231.0086617435747,
+              "in_space_acceptance": 0.7068965517241379,
+              "rejection": {
+                "beans": 0.49333333333333335,
+                "fcdd_apple": 0.9275,
+                "fcdd_other": 0.8858333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.31,
+              "threshold": -229.19132966701312,
+              "in_space_acceptance": 0.7068965517241379,
+              "rejection": {
+                "beans": 0.5066666666666667,
+                "fcdd_apple": 0.93,
+                "fcdd_other": 0.8916666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.32,
+              "threshold": -225.60850190657655,
+              "in_space_acceptance": 0.7025862068965517,
+              "rejection": {
+                "beans": 0.525,
+                "fcdd_apple": 0.9375,
+                "fcdd_other": 0.9008333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.33,
+              "threshold": -223.34250033497932,
+              "in_space_acceptance": 0.6982758620689655,
+              "rejection": {
+                "beans": 0.5308333333333334,
+                "fcdd_apple": 0.9375,
+                "fcdd_other": 0.9083333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.34,
+              "threshold": -221.77660254260826,
+              "in_space_acceptance": 0.6896551724137931,
+              "rejection": {
+                "beans": 0.5383333333333333,
+                "fcdd_apple": 0.9425,
+                "fcdd_other": 0.9116666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.35,
+              "threshold": -219.792146570689,
+              "in_space_acceptance": 0.6896551724137931,
+              "rejection": {
+                "beans": 0.5483333333333333,
+                "fcdd_apple": 0.9425,
+                "fcdd_other": 0.9191666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.36,
+              "threshold": -218.5378653522159,
+              "in_space_acceptance": 0.6724137931034483,
+              "rejection": {
+                "beans": 0.56,
+                "fcdd_apple": 0.945,
+                "fcdd_other": 0.9225
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.37,
+              "threshold": -217.85120329094738,
+              "in_space_acceptance": 0.6681034482758621,
+              "rejection": {
+                "beans": 0.5633333333333334,
+                "fcdd_apple": 0.95,
+                "fcdd_other": 0.9241666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.38,
+              "threshold": -216.99351285165366,
+              "in_space_acceptance": 0.6681034482758621,
+              "rejection": {
+                "beans": 0.5658333333333333,
+                "fcdd_apple": 0.9525,
+                "fcdd_other": 0.9258333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.39,
+              "threshold": -215.56202192686044,
+              "in_space_acceptance": 0.6681034482758621,
+              "rejection": {
+                "beans": 0.5775,
+                "fcdd_apple": 0.9575,
+                "fcdd_other": 0.9283333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.4,
+              "threshold": -213.07960998279043,
+              "in_space_acceptance": 0.6594827586206896,
+              "rejection": {
+                "beans": 0.5891666666666666,
+                "fcdd_apple": 0.9625,
+                "fcdd_other": 0.9358333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.41,
+              "threshold": -210.07224656392447,
+              "in_space_acceptance": 0.6422413793103449,
+              "rejection": {
+                "beans": 0.6108333333333333,
+                "fcdd_apple": 0.9675,
+                "fcdd_other": 0.9433333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.42,
+              "threshold": -203.40141919767046,
+              "in_space_acceptance": 0.6077586206896551,
+              "rejection": {
+                "beans": 0.6525,
+                "fcdd_apple": 0.9875,
+                "fcdd_other": 0.965
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.43,
+              "threshold": -202.4423897849768,
+              "in_space_acceptance": 0.603448275862069,
+              "rejection": {
+                "beans": 0.6575,
+                "fcdd_apple": 0.99,
+                "fcdd_other": 0.9675
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.44,
+              "threshold": -199.5645040026355,
+              "in_space_acceptance": 0.5905172413793104,
+              "rejection": {
+                "beans": 0.6675,
+                "fcdd_apple": 0.99,
+                "fcdd_other": 0.9766666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.45,
+              "threshold": -194.2777805331073,
+              "in_space_acceptance": 0.5862068965517241,
+              "rejection": {
+                "beans": 0.6941666666666667,
+                "fcdd_apple": 0.9925,
+                "fcdd_other": 0.9841666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.46,
+              "threshold": -192.15503529803178,
+              "in_space_acceptance": 0.5689655172413793,
+              "rejection": {
+                "beans": 0.705,
+                "fcdd_apple": 0.9925,
+                "fcdd_other": 0.9891666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.47,
+              "threshold": -191.29590673197524,
+              "in_space_acceptance": 0.5689655172413793,
+              "rejection": {
+                "beans": 0.7108333333333333,
+                "fcdd_apple": 0.9925,
+                "fcdd_other": 0.9891666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.48,
+              "threshold": -187.39879358423767,
+              "in_space_acceptance": 0.5431034482758621,
+              "rejection": {
+                "beans": 0.7275,
+                "fcdd_apple": 0.995,
+                "fcdd_other": 0.9933333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.49,
+              "threshold": -185.3278207491111,
+              "in_space_acceptance": 0.5172413793103449,
+              "rejection": {
+                "beans": 0.7358333333333333,
+                "fcdd_apple": 0.9975,
+                "fcdd_other": 0.9941666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.5,
+              "threshold": -183.70276679730645,
+              "in_space_acceptance": 0.5086206896551724,
+              "rejection": {
+                "beans": 0.75,
+                "fcdd_apple": 1.0,
+                "fcdd_other": 0.995
+              },
+              "meets_h7": false
+            }
+          ],
+          "h7_feasible": false,
+          "best_operating_point": null
+        },
+        {
+          "seed": 1,
+          "n_tune": 232,
+          "n_eval": 232,
+          "n_ood": {
+            "beans": 1200,
+            "fcdd_apple": 400,
+            "fcdd_other": 1200
+          },
+          "operating_curve": [
+            {
+              "q": 0.01,
+              "threshold": -453.4977559298566,
+              "in_space_acceptance": 0.9827586206896551,
+              "rejection": {
+                "beans": 0.0008333333333333334,
+                "fcdd_apple": 0.0525,
+                "fcdd_other": 0.0175
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.02,
+              "threshold": -412.18814378308616,
+              "in_space_acceptance": 0.978448275862069,
+              "rejection": {
+                "beans": 0.01,
+                "fcdd_apple": 0.1225,
+                "fcdd_other": 0.059166666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.03,
+              "threshold": -390.55348553178993,
+              "in_space_acceptance": 0.9655172413793104,
+              "rejection": {
+                "beans": 0.016666666666666666,
+                "fcdd_apple": 0.1725,
+                "fcdd_other": 0.10916666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.04,
+              "threshold": -376.21853855527445,
+              "in_space_acceptance": 0.9568965517241379,
+              "rejection": {
+                "beans": 0.025833333333333333,
+                "fcdd_apple": 0.21,
+                "fcdd_other": 0.16083333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.05,
+              "threshold": -357.51782570297934,
+              "in_space_acceptance": 0.9396551724137931,
+              "rejection": {
+                "beans": 0.043333333333333335,
+                "fcdd_apple": 0.285,
+                "fcdd_other": 0.23
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.06,
+              "threshold": -337.9808443314404,
+              "in_space_acceptance": 0.9267241379310345,
+              "rejection": {
+                "beans": 0.07166666666666667,
+                "fcdd_apple": 0.3625,
+                "fcdd_other": 0.32416666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.07,
+              "threshold": -334.61638347216,
+              "in_space_acceptance": 0.9267241379310345,
+              "rejection": {
+                "beans": 0.07666666666666666,
+                "fcdd_apple": 0.385,
+                "fcdd_other": 0.335
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.08,
+              "threshold": -326.3565213418944,
+              "in_space_acceptance": 0.9051724137931034,
+              "rejection": {
+                "beans": 0.0975,
+                "fcdd_apple": 0.4275,
+                "fcdd_other": 0.37666666666666665
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.09,
+              "threshold": -319.27459540937036,
+              "in_space_acceptance": 0.896551724137931,
+              "rejection": {
+                "beans": 0.115,
+                "fcdd_apple": 0.485,
+                "fcdd_other": 0.4191666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.1,
+              "threshold": -317.172718073837,
+              "in_space_acceptance": 0.8922413793103449,
+              "rejection": {
+                "beans": 0.11916666666666667,
+                "fcdd_apple": 0.5,
+                "fcdd_other": 0.4266666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.11,
+              "threshold": -310.4886732860194,
+              "in_space_acceptance": 0.8879310344827587,
+              "rejection": {
+                "beans": 0.13666666666666666,
+                "fcdd_apple": 0.525,
+                "fcdd_other": 0.45916666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.12,
+              "threshold": -302.1698807335127,
+              "in_space_acceptance": 0.875,
+              "rejection": {
+                "beans": 0.1625,
+                "fcdd_apple": 0.5625,
+                "fcdd_other": 0.5091666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.13,
+              "threshold": -301.331570761834,
+              "in_space_acceptance": 0.875,
+              "rejection": {
+                "beans": 0.16333333333333333,
+                "fcdd_apple": 0.565,
+                "fcdd_other": 0.515
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.14,
+              "threshold": -297.8977409091572,
+              "in_space_acceptance": 0.875,
+              "rejection": {
+                "beans": 0.17833333333333334,
+                "fcdd_apple": 0.575,
+                "fcdd_other": 0.5316666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.15,
+              "threshold": -289.25550330414177,
+              "in_space_acceptance": 0.875,
+              "rejection": {
+                "beans": 0.21333333333333335,
+                "fcdd_apple": 0.63,
+                "fcdd_other": 0.5791666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.16,
+              "threshold": -276.629375469051,
+              "in_space_acceptance": 0.853448275862069,
+              "rejection": {
+                "beans": 0.27166666666666667,
+                "fcdd_apple": 0.705,
+                "fcdd_other": 0.6516666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.17,
+              "threshold": -266.85695262290636,
+              "in_space_acceptance": 0.8146551724137931,
+              "rejection": {
+                "beans": 0.30833333333333335,
+                "fcdd_apple": 0.7625,
+                "fcdd_other": 0.7125
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.18,
+              "threshold": -265.10852580651124,
+              "in_space_acceptance": 0.8146551724137931,
+              "rejection": {
+                "beans": 0.31916666666666665,
+                "fcdd_apple": 0.77,
+                "fcdd_other": 0.7216666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.19,
+              "threshold": -257.58336577860615,
+              "in_space_acceptance": 0.8017241379310345,
+              "rejection": {
+                "beans": 0.35,
+                "fcdd_apple": 0.8075,
+                "fcdd_other": 0.7591666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.2,
+              "threshold": -255.17166795776293,
+              "in_space_acceptance": 0.7931034482758621,
+              "rejection": {
+                "beans": 0.36,
+                "fcdd_apple": 0.82,
+                "fcdd_other": 0.7733333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.21,
+              "threshold": -250.52486681663675,
+              "in_space_acceptance": 0.771551724137931,
+              "rejection": {
+                "beans": 0.3825,
+                "fcdd_apple": 0.8425,
+                "fcdd_other": 0.7925
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.22,
+              "threshold": -246.34212770020957,
+              "in_space_acceptance": 0.7543103448275862,
+              "rejection": {
+                "beans": 0.405,
+                "fcdd_apple": 0.8775,
+                "fcdd_other": 0.8083333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.23,
+              "threshold": -245.57913811859535,
+              "in_space_acceptance": 0.7543103448275862,
+              "rejection": {
+                "beans": 0.4116666666666667,
+                "fcdd_apple": 0.88,
+                "fcdd_other": 0.8116666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.24,
+              "threshold": -241.84661098855176,
+              "in_space_acceptance": 0.7413793103448276,
+              "rejection": {
+                "beans": 0.42916666666666664,
+                "fcdd_apple": 0.8875,
+                "fcdd_other": 0.83
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.25,
+              "threshold": -240.55704039651158,
+              "in_space_acceptance": 0.7370689655172413,
+              "rejection": {
+                "beans": 0.43833333333333335,
+                "fcdd_apple": 0.8925,
+                "fcdd_other": 0.835
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.26,
+              "threshold": -238.5889611889176,
+              "in_space_acceptance": 0.7327586206896551,
+              "rejection": {
+                "beans": 0.44916666666666666,
+                "fcdd_apple": 0.8975,
+                "fcdd_other": 0.8458333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.27,
+              "threshold": -234.42235325489932,
+              "in_space_acceptance": 0.7025862068965517,
+              "rejection": {
+                "beans": 0.475,
+                "fcdd_apple": 0.92,
+                "fcdd_other": 0.8658333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.28,
+              "threshold": -230.4730582184018,
+              "in_space_acceptance": 0.6853448275862069,
+              "rejection": {
+                "beans": 0.49583333333333335,
+                "fcdd_apple": 0.9275,
+                "fcdd_other": 0.8875
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.29,
+              "threshold": -226.9010660757376,
+              "in_space_acceptance": 0.6767241379310345,
+              "rejection": {
+                "beans": 0.515,
+                "fcdd_apple": 0.9375,
+                "fcdd_other": 0.8966666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.3,
+              "threshold": -223.4190957538257,
+              "in_space_acceptance": 0.6681034482758621,
+              "rejection": {
+                "beans": 0.5291666666666667,
+                "fcdd_apple": 0.9375,
+                "fcdd_other": 0.9083333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.31,
+              "threshold": -222.21640727360557,
+              "in_space_acceptance": 0.6681034482758621,
+              "rejection": {
+                "beans": 0.5341666666666667,
+                "fcdd_apple": 0.94,
+                "fcdd_other": 0.91
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.32,
+              "threshold": -220.4967076695077,
+              "in_space_acceptance": 0.6637931034482759,
+              "rejection": {
+                "beans": 0.545,
+                "fcdd_apple": 0.9425,
+                "fcdd_other": 0.9183333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.33,
+              "threshold": -218.3360841912364,
+              "in_space_acceptance": 0.6379310344827587,
+              "rejection": {
+                "beans": 0.5608333333333333,
+                "fcdd_apple": 0.945,
+                "fcdd_other": 0.9225
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.34,
+              "threshold": -217.1546244669093,
+              "in_space_acceptance": 0.6293103448275862,
+              "rejection": {
+                "beans": 0.5658333333333333,
+                "fcdd_apple": 0.95,
+                "fcdd_other": 0.925
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.35,
+              "threshold": -214.5656494834608,
+              "in_space_acceptance": 0.625,
+              "rejection": {
+                "beans": 0.5833333333333334,
+                "fcdd_apple": 0.9575,
+                "fcdd_other": 0.9316666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.36,
+              "threshold": -213.59283437040165,
+              "in_space_acceptance": 0.6206896551724138,
+              "rejection": {
+                "beans": 0.5866666666666667,
+                "fcdd_apple": 0.96,
+                "fcdd_other": 0.935
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.37,
+              "threshold": -211.28303268247709,
+              "in_space_acceptance": 0.6163793103448276,
+              "rejection": {
+                "beans": 0.6041666666666666,
+                "fcdd_apple": 0.965,
+                "fcdd_other": 0.9383333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.38,
+              "threshold": -209.84817503696098,
+              "in_space_acceptance": 0.6077586206896551,
+              "rejection": {
+                "beans": 0.6108333333333333,
+                "fcdd_apple": 0.97,
+                "fcdd_other": 0.9433333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.39,
+              "threshold": -209.10060645330765,
+              "in_space_acceptance": 0.6077586206896551,
+              "rejection": {
+                "beans": 0.6166666666666667,
+                "fcdd_apple": 0.9775,
+                "fcdd_other": 0.945
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.4,
+              "threshold": -205.87908740834365,
+              "in_space_acceptance": 0.5991379310344828,
+              "rejection": {
+                "beans": 0.6366666666666667,
+                "fcdd_apple": 0.9825,
+                "fcdd_other": 0.9583333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.41,
+              "threshold": -203.06293453297621,
+              "in_space_acceptance": 0.5905172413793104,
+              "rejection": {
+                "beans": 0.6541666666666667,
+                "fcdd_apple": 0.9875,
+                "fcdd_other": 0.9658333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.42,
+              "threshold": -201.23484477032622,
+              "in_space_acceptance": 0.5862068965517241,
+              "rejection": {
+                "beans": 0.6616666666666666,
+                "fcdd_apple": 0.99,
+                "fcdd_other": 0.9716666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.43,
+              "threshold": -196.6864358922558,
+              "in_space_acceptance": 0.5689655172413793,
+              "rejection": {
+                "beans": 0.685,
+                "fcdd_apple": 0.9925,
+                "fcdd_other": 0.9816666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.44,
+              "threshold": -193.05547464050434,
+              "in_space_acceptance": 0.5646551724137931,
+              "rejection": {
+                "beans": 0.7,
+                "fcdd_apple": 0.9925,
+                "fcdd_other": 0.9883333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.45,
+              "threshold": -192.19225767174362,
+              "in_space_acceptance": 0.5603448275862069,
+              "rejection": {
+                "beans": 0.705,
+                "fcdd_apple": 0.9925,
+                "fcdd_other": 0.9891666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.46,
+              "threshold": -191.3529969277747,
+              "in_space_acceptance": 0.5603448275862069,
+              "rejection": {
+                "beans": 0.71,
+                "fcdd_apple": 0.9925,
+                "fcdd_other": 0.9891666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.47,
+              "threshold": -189.2443668503799,
+              "in_space_acceptance": 0.5560344827586207,
+              "rejection": {
+                "beans": 0.7191666666666666,
+                "fcdd_apple": 0.995,
+                "fcdd_other": 0.9916666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.48,
+              "threshold": -188.21716670093954,
+              "in_space_acceptance": 0.5517241379310345,
+              "rejection": {
+                "beans": 0.7241666666666666,
+                "fcdd_apple": 0.995,
+                "fcdd_other": 0.9933333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.49,
+              "threshold": -186.47772351704376,
+              "in_space_acceptance": 0.5431034482758621,
+              "rejection": {
+                "beans": 0.73,
+                "fcdd_apple": 0.995,
+                "fcdd_other": 0.9933333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.5,
+              "threshold": -185.8843861964682,
+              "in_space_acceptance": 0.5387931034482759,
+              "rejection": {
+                "beans": 0.7325,
+                "fcdd_apple": 0.995,
+                "fcdd_other": 0.9933333333333333
+              },
+              "meets_h7": false
+            }
+          ],
+          "h7_feasible": false,
+          "best_operating_point": null
+        },
+        {
+          "seed": 2,
+          "n_tune": 232,
+          "n_eval": 232,
+          "n_ood": {
+            "beans": 1200,
+            "fcdd_apple": 400,
+            "fcdd_other": 1200
+          },
+          "operating_curve": [
+            {
+              "q": 0.01,
+              "threshold": -525.6581080200428,
+              "in_space_acceptance": 0.9956896551724138,
+              "rejection": {
+                "beans": 0.0,
+                "fcdd_apple": 0.0125,
+                "fcdd_other": 0.0025
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.02,
+              "threshold": -451.9563074749012,
+              "in_space_acceptance": 0.9913793103448276,
+              "rejection": {
+                "beans": 0.0008333333333333334,
+                "fcdd_apple": 0.055,
+                "fcdd_other": 0.018333333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.03,
+              "threshold": -408.12375027328585,
+              "in_space_acceptance": 0.9870689655172413,
+              "rejection": {
+                "beans": 0.010833333333333334,
+                "fcdd_apple": 0.1325,
+                "fcdd_other": 0.06583333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.04,
+              "threshold": -394.90123031510024,
+              "in_space_acceptance": 0.9827586206896551,
+              "rejection": {
+                "beans": 0.015833333333333335,
+                "fcdd_apple": 0.165,
+                "fcdd_other": 0.09916666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.05,
+              "threshold": -377.17243750018207,
+              "in_space_acceptance": 0.9655172413793104,
+              "rejection": {
+                "beans": 0.023333333333333334,
+                "fcdd_apple": 0.21,
+                "fcdd_other": 0.15666666666666668
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.06,
+              "threshold": -368.86265383735264,
+              "in_space_acceptance": 0.9655172413793104,
+              "rejection": {
+                "beans": 0.03166666666666667,
+                "fcdd_apple": 0.24,
+                "fcdd_other": 0.18
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.07,
+              "threshold": -346.7783123802055,
+              "in_space_acceptance": 0.9525862068965517,
+              "rejection": {
+                "beans": 0.056666666666666664,
+                "fcdd_apple": 0.3275,
+                "fcdd_other": 0.28583333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.08,
+              "threshold": -334.75149836909503,
+              "in_space_acceptance": 0.9353448275862069,
+              "rejection": {
+                "beans": 0.07583333333333334,
+                "fcdd_apple": 0.385,
+                "fcdd_other": 0.335
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.09,
+              "threshold": -330.1936725781862,
+              "in_space_acceptance": 0.9310344827586207,
+              "rejection": {
+                "beans": 0.0875,
+                "fcdd_apple": 0.41,
+                "fcdd_other": 0.3625
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.1,
+              "threshold": -325.92373142532495,
+              "in_space_acceptance": 0.9224137931034483,
+              "rejection": {
+                "beans": 0.10083333333333333,
+                "fcdd_apple": 0.4325,
+                "fcdd_other": 0.37833333333333335
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.11,
+              "threshold": -315.21121597609624,
+              "in_space_acceptance": 0.896551724137931,
+              "rejection": {
+                "beans": 0.12166666666666667,
+                "fcdd_apple": 0.505,
+                "fcdd_other": 0.43333333333333335
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.12,
+              "threshold": -310.0300725047304,
+              "in_space_acceptance": 0.8922413793103449,
+              "rejection": {
+                "beans": 0.13916666666666666,
+                "fcdd_apple": 0.5275,
+                "fcdd_other": 0.4625
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.13,
+              "threshold": -301.7251251853081,
+              "in_space_acceptance": 0.8836206896551724,
+              "rejection": {
+                "beans": 0.16333333333333333,
+                "fcdd_apple": 0.5625,
+                "fcdd_other": 0.5116666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.14,
+              "threshold": -297.8977409091572,
+              "in_space_acceptance": 0.875,
+              "rejection": {
+                "beans": 0.17833333333333334,
+                "fcdd_apple": 0.575,
+                "fcdd_other": 0.5316666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.15,
+              "threshold": -286.77542183701934,
+              "in_space_acceptance": 0.8706896551724138,
+              "rejection": {
+                "beans": 0.225,
+                "fcdd_apple": 0.6325,
+                "fcdd_other": 0.59
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.16,
+              "threshold": -279.7221025499095,
+              "in_space_acceptance": 0.8620689655172413,
+              "rejection": {
+                "beans": 0.2608333333333333,
+                "fcdd_apple": 0.69,
+                "fcdd_other": 0.6341666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.17,
+              "threshold": -275.693794306685,
+              "in_space_acceptance": 0.853448275862069,
+              "rejection": {
+                "beans": 0.2733333333333333,
+                "fcdd_apple": 0.7125,
+                "fcdd_other": 0.6583333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.18,
+              "threshold": -270.54393084125593,
+              "in_space_acceptance": 0.8405172413793104,
+              "rejection": {
+                "beans": 0.29083333333333333,
+                "fcdd_apple": 0.7425,
+                "fcdd_other": 0.6858333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.19,
+              "threshold": -259.90225904040113,
+              "in_space_acceptance": 0.8146551724137931,
+              "rejection": {
+                "beans": 0.3416666666666667,
+                "fcdd_apple": 0.7975,
+                "fcdd_other": 0.7483333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.2,
+              "threshold": -256.71903988544875,
+              "in_space_acceptance": 0.8060344827586207,
+              "rejection": {
+                "beans": 0.3541666666666667,
+                "fcdd_apple": 0.815,
+                "fcdd_other": 0.7625
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.21,
+              "threshold": -254.79114795797003,
+              "in_space_acceptance": 0.8017241379310345,
+              "rejection": {
+                "beans": 0.36083333333333334,
+                "fcdd_apple": 0.82,
+                "fcdd_other": 0.775
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.22,
+              "threshold": -247.55127496788575,
+              "in_space_acceptance": 0.7586206896551724,
+              "rejection": {
+                "beans": 0.4008333333333333,
+                "fcdd_apple": 0.87,
+                "fcdd_other": 0.8041666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.23,
+              "threshold": -244.37232685598394,
+              "in_space_acceptance": 0.7456896551724138,
+              "rejection": {
+                "beans": 0.41833333333333333,
+                "fcdd_apple": 0.8825,
+                "fcdd_other": 0.8166666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.24,
+              "threshold": -242.78834979626373,
+              "in_space_acceptance": 0.7456896551724138,
+              "rejection": {
+                "beans": 0.4266666666666667,
+                "fcdd_apple": 0.8875,
+                "fcdd_other": 0.825
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.25,
+              "threshold": -240.32071830743695,
+              "in_space_acceptance": 0.7327586206896551,
+              "rejection": {
+                "beans": 0.44083333333333335,
+                "fcdd_apple": 0.8925,
+                "fcdd_other": 0.8358333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.26,
+              "threshold": -238.35269348298326,
+              "in_space_acceptance": 0.728448275862069,
+              "rejection": {
+                "beans": 0.45,
+                "fcdd_apple": 0.8975,
+                "fcdd_other": 0.8458333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.27,
+              "threshold": -235.64708860004293,
+              "in_space_acceptance": 0.7198275862068966,
+              "rejection": {
+                "beans": 0.4675,
+                "fcdd_apple": 0.9125,
+                "fcdd_other": 0.86
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.28,
+              "threshold": -235.0926704238312,
+              "in_space_acceptance": 0.7155172413793104,
+              "rejection": {
+                "beans": 0.4725,
+                "fcdd_apple": 0.92,
+                "fcdd_other": 0.865
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.29,
+              "threshold": -231.2748821351652,
+              "in_space_acceptance": 0.7025862068965517,
+              "rejection": {
+                "beans": 0.49333333333333335,
+                "fcdd_apple": 0.9275,
+                "fcdd_other": 0.8841666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.3,
+              "threshold": -227.6576472307232,
+              "in_space_acceptance": 0.6896551724137931,
+              "rejection": {
+                "beans": 0.5108333333333334,
+                "fcdd_apple": 0.9325,
+                "fcdd_other": 0.8958333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.31,
+              "threshold": -224.61998257146044,
+              "in_space_acceptance": 0.6853448275862069,
+              "rejection": {
+                "beans": 0.5275,
+                "fcdd_apple": 0.9375,
+                "fcdd_other": 0.9025
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.32,
+              "threshold": -220.59668873705292,
+              "in_space_acceptance": 0.6637931034482759,
+              "rejection": {
+                "beans": 0.545,
+                "fcdd_apple": 0.9425,
+                "fcdd_other": 0.9183333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.33,
+              "threshold": -218.79762471096652,
+              "in_space_acceptance": 0.6551724137931034,
+              "rejection": {
+                "beans": 0.5583333333333333,
+                "fcdd_apple": 0.9425,
+                "fcdd_other": 0.9216666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.34,
+              "threshold": -218.32855463405562,
+              "in_space_acceptance": 0.646551724137931,
+              "rejection": {
+                "beans": 0.5608333333333333,
+                "fcdd_apple": 0.945,
+                "fcdd_other": 0.9225
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.35,
+              "threshold": -217.52268391967962,
+              "in_space_acceptance": 0.6422413793103449,
+              "rejection": {
+                "beans": 0.5641666666666667,
+                "fcdd_apple": 0.95,
+                "fcdd_other": 0.925
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.36,
+              "threshold": -214.43290119745885,
+              "in_space_acceptance": 0.6336206896551724,
+              "rejection": {
+                "beans": 0.5833333333333334,
+                "fcdd_apple": 0.9575,
+                "fcdd_other": 0.9316666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.37,
+              "threshold": -214.13122205560828,
+              "in_space_acceptance": 0.6336206896551724,
+              "rejection": {
+                "beans": 0.585,
+                "fcdd_apple": 0.96,
+                "fcdd_other": 0.9333333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.38,
+              "threshold": -212.2791217250144,
+              "in_space_acceptance": 0.6336206896551724,
+              "rejection": {
+                "beans": 0.5958333333333333,
+                "fcdd_apple": 0.9625,
+                "fcdd_other": 0.9366666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.39,
+              "threshold": -210.53480713669228,
+              "in_space_acceptance": 0.625,
+              "rejection": {
+                "beans": 0.6083333333333333,
+                "fcdd_apple": 0.9675,
+                "fcdd_other": 0.9425
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.4,
+              "threshold": -209.72850764238888,
+              "in_space_acceptance": 0.625,
+              "rejection": {
+                "beans": 0.6116666666666667,
+                "fcdd_apple": 0.975,
+                "fcdd_other": 0.9441666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.41,
+              "threshold": -209.0634704937868,
+              "in_space_acceptance": 0.625,
+              "rejection": {
+                "beans": 0.6175,
+                "fcdd_apple": 0.9775,
+                "fcdd_other": 0.945
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.42,
+              "threshold": -205.8694395406683,
+              "in_space_acceptance": 0.6206896551724138,
+              "rejection": {
+                "beans": 0.6366666666666667,
+                "fcdd_apple": 0.9825,
+                "fcdd_other": 0.9583333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.43,
+              "threshold": -204.3133835896771,
+              "in_space_acceptance": 0.6206896551724138,
+              "rejection": {
+                "beans": 0.645,
+                "fcdd_apple": 0.985,
+                "fcdd_other": 0.9608333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.44,
+              "threshold": -201.82605257991423,
+              "in_space_acceptance": 0.6120689655172413,
+              "rejection": {
+                "beans": 0.66,
+                "fcdd_apple": 0.99,
+                "fcdd_other": 0.97
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.45,
+              "threshold": -199.90073934038782,
+              "in_space_acceptance": 0.6077586206896551,
+              "rejection": {
+                "beans": 0.6658333333333334,
+                "fcdd_apple": 0.99,
+                "fcdd_other": 0.9741666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.46,
+              "threshold": -196.95565576382887,
+              "in_space_acceptance": 0.5991379310344828,
+              "rejection": {
+                "beans": 0.6841666666666667,
+                "fcdd_apple": 0.9925,
+                "fcdd_other": 0.98
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.47,
+              "threshold": -193.4026397831948,
+              "in_space_acceptance": 0.5991379310344828,
+              "rejection": {
+                "beans": 0.6991666666666667,
+                "fcdd_apple": 0.9925,
+                "fcdd_other": 0.9883333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.48,
+              "threshold": -192.10500028861864,
+              "in_space_acceptance": 0.5862068965517241,
+              "rejection": {
+                "beans": 0.705,
+                "fcdd_apple": 0.9925,
+                "fcdd_other": 0.9891666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.49,
+              "threshold": -190.44905679337043,
+              "in_space_acceptance": 0.5818965517241379,
+              "rejection": {
+                "beans": 0.7133333333333334,
+                "fcdd_apple": 0.9925,
+                "fcdd_other": 0.99
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.5,
+              "threshold": -188.92174199789264,
+              "in_space_acceptance": 0.5818965517241379,
+              "rejection": {
+                "beans": 0.7208333333333333,
+                "fcdd_apple": 0.995,
+                "fcdd_other": 0.9925
+              },
+              "meets_h7": false
+            }
+          ],
+          "h7_feasible": false,
+          "best_operating_point": null
+        },
+        {
+          "seed": 3,
+          "n_tune": 232,
+          "n_eval": 232,
+          "n_ood": {
+            "beans": 1200,
+            "fcdd_apple": 400,
+            "fcdd_other": 1200
+          },
+          "operating_curve": [
+            {
+              "q": 0.01,
+              "threshold": -466.95539957153295,
+              "in_space_acceptance": 0.9870689655172413,
+              "rejection": {
+                "beans": 0.0008333333333333334,
+                "fcdd_apple": 0.0375,
+                "fcdd_other": 0.0125
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.02,
+              "threshold": -412.9261697203031,
+              "in_space_acceptance": 0.978448275862069,
+              "rejection": {
+                "beans": 0.01,
+                "fcdd_apple": 0.1225,
+                "fcdd_other": 0.05583333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.03,
+              "threshold": -380.78559286458875,
+              "in_space_acceptance": 0.9568965517241379,
+              "rejection": {
+                "beans": 0.020833333333333332,
+                "fcdd_apple": 0.2,
+                "fcdd_other": 0.1425
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.04,
+              "threshold": -366.5799717588387,
+              "in_space_acceptance": 0.9396551724137931,
+              "rejection": {
+                "beans": 0.0325,
+                "fcdd_apple": 0.245,
+                "fcdd_other": 0.19166666666666668
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.05,
+              "threshold": -348.6713079407207,
+              "in_space_acceptance": 0.9353448275862069,
+              "rejection": {
+                "beans": 0.055,
+                "fcdd_apple": 0.3225,
+                "fcdd_other": 0.2725
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.06,
+              "threshold": -338.76425453630327,
+              "in_space_acceptance": 0.9310344827586207,
+              "rejection": {
+                "beans": 0.07166666666666667,
+                "fcdd_apple": 0.36,
+                "fcdd_other": 0.32083333333333336
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.07,
+              "threshold": -334.55473392190163,
+              "in_space_acceptance": 0.9267241379310345,
+              "rejection": {
+                "beans": 0.0775,
+                "fcdd_apple": 0.385,
+                "fcdd_other": 0.3358333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.08,
+              "threshold": -326.5614139926698,
+              "in_space_acceptance": 0.9094827586206896,
+              "rejection": {
+                "beans": 0.0975,
+                "fcdd_apple": 0.425,
+                "fcdd_other": 0.375
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.09,
+              "threshold": -321.2866231678213,
+              "in_space_acceptance": 0.9008620689655172,
+              "rejection": {
+                "beans": 0.11166666666666666,
+                "fcdd_apple": 0.47,
+                "fcdd_other": 0.405
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.1,
+              "threshold": -309.53976469537207,
+              "in_space_acceptance": 0.8706896551724138,
+              "rejection": {
+                "beans": 0.13916666666666666,
+                "fcdd_apple": 0.53,
+                "fcdd_other": 0.4658333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.11,
+              "threshold": -305.5927968108859,
+              "in_space_acceptance": 0.8706896551724138,
+              "rejection": {
+                "beans": 0.15166666666666667,
+                "fcdd_apple": 0.535,
+                "fcdd_other": 0.4925
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.12,
+              "threshold": -300.5987723317825,
+              "in_space_acceptance": 0.8620689655172413,
+              "rejection": {
+                "beans": 0.165,
+                "fcdd_apple": 0.5675,
+                "fcdd_other": 0.5166666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.13,
+              "threshold": -286.1541561153907,
+              "in_space_acceptance": 0.8448275862068966,
+              "rejection": {
+                "beans": 0.23,
+                "fcdd_apple": 0.6375,
+                "fcdd_other": 0.5925
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.14,
+              "threshold": -278.0821718251215,
+              "in_space_acceptance": 0.8405172413793104,
+              "rejection": {
+                "beans": 0.26416666666666666,
+                "fcdd_apple": 0.695,
+                "fcdd_other": 0.6441666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.15,
+              "threshold": -274.46932830765735,
+              "in_space_acceptance": 0.8232758620689655,
+              "rejection": {
+                "beans": 0.2783333333333333,
+                "fcdd_apple": 0.7175,
+                "fcdd_other": 0.6641666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.16,
+              "threshold": -267.32606965252194,
+              "in_space_acceptance": 0.8060344827586207,
+              "rejection": {
+                "beans": 0.30583333333333335,
+                "fcdd_apple": 0.76,
+                "fcdd_other": 0.7083333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.17,
+              "threshold": -265.53489680884843,
+              "in_space_acceptance": 0.8060344827586207,
+              "rejection": {
+                "beans": 0.315,
+                "fcdd_apple": 0.7625,
+                "fcdd_other": 0.7208333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.18,
+              "threshold": -260.97088372502765,
+              "in_space_acceptance": 0.8060344827586207,
+              "rejection": {
+                "beans": 0.3308333333333333,
+                "fcdd_apple": 0.7875,
+                "fcdd_other": 0.7425
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.19,
+              "threshold": -257.66381383316474,
+              "in_space_acceptance": 0.8060344827586207,
+              "rejection": {
+                "beans": 0.35,
+                "fcdd_apple": 0.8075,
+                "fcdd_other": 0.7575
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.2,
+              "threshold": -254.98780210352646,
+              "in_space_acceptance": 0.7931034482758621,
+              "rejection": {
+                "beans": 0.36,
+                "fcdd_apple": 0.82,
+                "fcdd_other": 0.7741666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.21,
+              "threshold": -251.01618999805405,
+              "in_space_acceptance": 0.7758620689655172,
+              "rejection": {
+                "beans": 0.37916666666666665,
+                "fcdd_apple": 0.84,
+                "fcdd_other": 0.79
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.22,
+              "threshold": -248.65054955024698,
+              "in_space_acceptance": 0.7629310344827587,
+              "rejection": {
+                "beans": 0.3958333333333333,
+                "fcdd_apple": 0.855,
+                "fcdd_other": 0.8016666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.23,
+              "threshold": -245.05803949956163,
+              "in_space_acceptance": 0.75,
+              "rejection": {
+                "beans": 0.4141666666666667,
+                "fcdd_apple": 0.88,
+                "fcdd_other": 0.8158333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.24,
+              "threshold": -240.02939556024634,
+              "in_space_acceptance": 0.7198275862068966,
+              "rejection": {
+                "beans": 0.44166666666666665,
+                "fcdd_apple": 0.8925,
+                "fcdd_other": 0.8383333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.25,
+              "threshold": -237.15716535930488,
+              "in_space_acceptance": 0.7112068965517241,
+              "rejection": {
+                "beans": 0.4558333333333333,
+                "fcdd_apple": 0.9075,
+                "fcdd_other": 0.8533333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.26,
+              "threshold": -235.4609752303514,
+              "in_space_acceptance": 0.7068965517241379,
+              "rejection": {
+                "beans": 0.4708333333333333,
+                "fcdd_apple": 0.9125,
+                "fcdd_other": 0.8625
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.27,
+              "threshold": -231.76426399018717,
+              "in_space_acceptance": 0.6939655172413793,
+              "rejection": {
+                "beans": 0.4875,
+                "fcdd_apple": 0.9275,
+                "fcdd_other": 0.8825
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.28,
+              "threshold": -230.37063671522714,
+              "in_space_acceptance": 0.6810344827586207,
+              "rejection": {
+                "beans": 0.49583333333333335,
+                "fcdd_apple": 0.9275,
+                "fcdd_other": 0.8875
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.29,
+              "threshold": -222.7844025822752,
+              "in_space_acceptance": 0.6551724137931034,
+              "rejection": {
+                "beans": 0.5316666666666666,
+                "fcdd_apple": 0.94,
+                "fcdd_other": 0.9091666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.3,
+              "threshold": -221.40124559501098,
+              "in_space_acceptance": 0.646551724137931,
+              "rejection": {
+                "beans": 0.5416666666666666,
+                "fcdd_apple": 0.9425,
+                "fcdd_other": 0.915
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.31,
+              "threshold": -218.49206875228379,
+              "in_space_acceptance": 0.6206896551724138,
+              "rejection": {
+                "beans": 0.56,
+                "fcdd_apple": 0.945,
+                "fcdd_other": 0.9225
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.32,
+              "threshold": -217.56492358240448,
+              "in_space_acceptance": 0.6163793103448276,
+              "rejection": {
+                "beans": 0.5641666666666667,
+                "fcdd_apple": 0.95,
+                "fcdd_other": 0.925
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.33,
+              "threshold": -215.26556843230043,
+              "in_space_acceptance": 0.6077586206896551,
+              "rejection": {
+                "beans": 0.58,
+                "fcdd_apple": 0.9575,
+                "fcdd_other": 0.93
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.34,
+              "threshold": -212.33805112292197,
+              "in_space_acceptance": 0.5948275862068966,
+              "rejection": {
+                "beans": 0.595,
+                "fcdd_apple": 0.9625,
+                "fcdd_other": 0.9366666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.35,
+              "threshold": -210.7038803600178,
+              "in_space_acceptance": 0.5862068965517241,
+              "rejection": {
+                "beans": 0.6075,
+                "fcdd_apple": 0.9675,
+                "fcdd_other": 0.9425
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.36,
+              "threshold": -209.47128249555306,
+              "in_space_acceptance": 0.5818965517241379,
+              "rejection": {
+                "beans": 0.615,
+                "fcdd_apple": 0.975,
+                "fcdd_other": 0.945
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.37,
+              "threshold": -206.2978210087053,
+              "in_space_acceptance": 0.5775862068965517,
+              "rejection": {
+                "beans": 0.635,
+                "fcdd_apple": 0.9825,
+                "fcdd_other": 0.9575
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.38,
+              "threshold": -205.45584301008824,
+              "in_space_acceptance": 0.5775862068965517,
+              "rejection": {
+                "beans": 0.6383333333333333,
+                "fcdd_apple": 0.9825,
+                "fcdd_other": 0.96
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.39,
+              "threshold": -202.68886887539102,
+              "in_space_acceptance": 0.5646551724137931,
+              "rejection": {
+                "beans": 0.6566666666666666,
+                "fcdd_apple": 0.9875,
+                "fcdd_other": 0.9666666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.4,
+              "threshold": -200.7218868650386,
+              "in_space_acceptance": 0.5646551724137931,
+              "rejection": {
+                "beans": 0.665,
+                "fcdd_apple": 0.99,
+                "fcdd_other": 0.9716666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.41,
+              "threshold": -198.9609379687522,
+              "in_space_acceptance": 0.5603448275862069,
+              "rejection": {
+                "beans": 0.6708333333333333,
+                "fcdd_apple": 0.99,
+                "fcdd_other": 0.9775
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.42,
+              "threshold": -194.10384750534857,
+              "in_space_acceptance": 0.5560344827586207,
+              "rejection": {
+                "beans": 0.695,
+                "fcdd_apple": 0.9925,
+                "fcdd_other": 0.9858333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.43,
+              "threshold": -192.86058208520782,
+              "in_space_acceptance": 0.5517241379310345,
+              "rejection": {
+                "beans": 0.7025,
+                "fcdd_apple": 0.9925,
+                "fcdd_other": 0.9883333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.44,
+              "threshold": -189.94256037219725,
+              "in_space_acceptance": 0.5301724137931034,
+              "rejection": {
+                "beans": 0.7166666666666667,
+                "fcdd_apple": 0.995,
+                "fcdd_other": 0.99
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.45,
+              "threshold": -188.16016433148786,
+              "in_space_acceptance": 0.521551724137931,
+              "rejection": {
+                "beans": 0.7241666666666666,
+                "fcdd_apple": 0.995,
+                "fcdd_other": 0.9933333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.46,
+              "threshold": -186.98003814198026,
+              "in_space_acceptance": 0.5172413793103449,
+              "rejection": {
+                "beans": 0.7283333333333334,
+                "fcdd_apple": 0.995,
+                "fcdd_other": 0.9933333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.47,
+              "threshold": -185.995433048088,
+              "in_space_acceptance": 0.5129310344827587,
+              "rejection": {
+                "beans": 0.7325,
+                "fcdd_apple": 0.995,
+                "fcdd_other": 0.9933333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.48,
+              "threshold": -185.87388134197315,
+              "in_space_acceptance": 0.5129310344827587,
+              "rejection": {
+                "beans": 0.7333333333333333,
+                "fcdd_apple": 0.995,
+                "fcdd_other": 0.9933333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.49,
+              "threshold": -184.1848508756994,
+              "in_space_acceptance": 0.5086206896551724,
+              "rejection": {
+                "beans": 0.7466666666666667,
+                "fcdd_apple": 1.0,
+                "fcdd_other": 0.9941666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.5,
+              "threshold": -183.63996601866944,
+              "in_space_acceptance": 0.5086206896551724,
+              "rejection": {
+                "beans": 0.75,
+                "fcdd_apple": 1.0,
+                "fcdd_other": 0.995
+              },
+              "meets_h7": false
+            }
+          ],
+          "h7_feasible": false,
+          "best_operating_point": null
+        },
+        {
+          "seed": 42,
+          "n_tune": 232,
+          "n_eval": 232,
+          "n_ood": {
+            "beans": 1200,
+            "fcdd_apple": 400,
+            "fcdd_other": 1200
+          },
+          "operating_curve": [
+            {
+              "q": 0.01,
+              "threshold": -433.9367319073639,
+              "in_space_acceptance": 0.9741379310344828,
+              "rejection": {
+                "beans": 0.0033333333333333335,
+                "fcdd_apple": 0.0825,
+                "fcdd_other": 0.03666666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.02,
+              "threshold": -406.5979057019548,
+              "in_space_acceptance": 0.9741379310344828,
+              "rejection": {
+                "beans": 0.011666666666666667,
+                "fcdd_apple": 0.135,
+                "fcdd_other": 0.06666666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.03,
+              "threshold": -390.70945380129757,
+              "in_space_acceptance": 0.9655172413793104,
+              "rejection": {
+                "beans": 0.016666666666666666,
+                "fcdd_apple": 0.1725,
+                "fcdd_other": 0.10833333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.04,
+              "threshold": -368.8235896829363,
+              "in_space_acceptance": 0.9482758620689655,
+              "rejection": {
+                "beans": 0.03166666666666667,
+                "fcdd_apple": 0.24,
+                "fcdd_other": 0.18
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.05,
+              "threshold": -346.08766086901085,
+              "in_space_acceptance": 0.9310344827586207,
+              "rejection": {
+                "beans": 0.0575,
+                "fcdd_apple": 0.3275,
+                "fcdd_other": 0.2866666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.06,
+              "threshold": -333.1698894778264,
+              "in_space_acceptance": 0.9094827586206896,
+              "rejection": {
+                "beans": 0.07916666666666666,
+                "fcdd_apple": 0.4025,
+                "fcdd_other": 0.345
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.07,
+              "threshold": -326.2629793076292,
+              "in_space_acceptance": 0.896551724137931,
+              "rejection": {
+                "beans": 0.0975,
+                "fcdd_apple": 0.4275,
+                "fcdd_other": 0.37666666666666665
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.08,
+              "threshold": -322.27296813220795,
+              "in_space_acceptance": 0.8922413793103449,
+              "rejection": {
+                "beans": 0.11,
+                "fcdd_apple": 0.465,
+                "fcdd_other": 0.395
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.09,
+              "threshold": -312.70843526223325,
+              "in_space_acceptance": 0.8706896551724138,
+              "rejection": {
+                "beans": 0.12833333333333333,
+                "fcdd_apple": 0.51,
+                "fcdd_other": 0.44583333333333336
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.1,
+              "threshold": -301.4757671049542,
+              "in_space_acceptance": 0.8491379310344828,
+              "rejection": {
+                "beans": 0.16333333333333333,
+                "fcdd_apple": 0.5625,
+                "fcdd_other": 0.5141666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.11,
+              "threshold": -287.33835491843894,
+              "in_space_acceptance": 0.8318965517241379,
+              "rejection": {
+                "beans": 0.22416666666666665,
+                "fcdd_apple": 0.6325,
+                "fcdd_other": 0.5875
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.12,
+              "threshold": -277.71198801225097,
+              "in_space_acceptance": 0.8189655172413793,
+              "rejection": {
+                "beans": 0.26666666666666666,
+                "fcdd_apple": 0.695,
+                "fcdd_other": 0.6458333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.13,
+              "threshold": -276.17168303513085,
+              "in_space_acceptance": 0.8146551724137931,
+              "rejection": {
+                "beans": 0.2725,
+                "fcdd_apple": 0.7125,
+                "fcdd_other": 0.6541666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.14,
+              "threshold": -273.46481036632923,
+              "in_space_acceptance": 0.8103448275862069,
+              "rejection": {
+                "beans": 0.2816666666666667,
+                "fcdd_apple": 0.7225,
+                "fcdd_other": 0.67
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.15,
+              "threshold": -270.4861485265831,
+              "in_space_acceptance": 0.8103448275862069,
+              "rejection": {
+                "beans": 0.29083333333333333,
+                "fcdd_apple": 0.7425,
+                "fcdd_other": 0.6875
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.16,
+              "threshold": -257.3888391013954,
+              "in_space_acceptance": 0.7672413793103449,
+              "rejection": {
+                "beans": 0.3516666666666667,
+                "fcdd_apple": 0.81,
+                "fcdd_other": 0.76
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.17,
+              "threshold": -254.04524467535532,
+              "in_space_acceptance": 0.7543103448275862,
+              "rejection": {
+                "beans": 0.365,
+                "fcdd_apple": 0.8225,
+                "fcdd_other": 0.7783333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.18,
+              "threshold": -252.48121138428363,
+              "in_space_acceptance": 0.75,
+              "rejection": {
+                "beans": 0.3725,
+                "fcdd_apple": 0.8325,
+                "fcdd_other": 0.7858333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.19,
+              "threshold": -249.60906633646238,
+              "in_space_acceptance": 0.7370689655172413,
+              "rejection": {
+                "beans": 0.3883333333333333,
+                "fcdd_apple": 0.8425,
+                "fcdd_other": 0.7975
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.2,
+              "threshold": -244.25806697130184,
+              "in_space_acceptance": 0.7155172413793104,
+              "rejection": {
+                "beans": 0.4191666666666667,
+                "fcdd_apple": 0.8825,
+                "fcdd_other": 0.8166666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.21,
+              "threshold": -241.26254234711266,
+              "in_space_acceptance": 0.7068965517241379,
+              "rejection": {
+                "beans": 0.43416666666666665,
+                "fcdd_apple": 0.8875,
+                "fcdd_other": 0.8341666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.22,
+              "threshold": -238.25520346332328,
+              "in_space_acceptance": 0.6853448275862069,
+              "rejection": {
+                "beans": 0.45,
+                "fcdd_apple": 0.8975,
+                "fcdd_other": 0.8458333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.23,
+              "threshold": -235.63575036934304,
+              "in_space_acceptance": 0.6810344827586207,
+              "rejection": {
+                "beans": 0.4675,
+                "fcdd_apple": 0.9125,
+                "fcdd_other": 0.8608333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.24,
+              "threshold": -235.0798117581374,
+              "in_space_acceptance": 0.6767241379310345,
+              "rejection": {
+                "beans": 0.4725,
+                "fcdd_apple": 0.92,
+                "fcdd_other": 0.865
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.25,
+              "threshold": -231.97104625082858,
+              "in_space_acceptance": 0.6767241379310345,
+              "rejection": {
+                "beans": 0.4866666666666667,
+                "fcdd_apple": 0.9275,
+                "fcdd_other": 0.8816666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.26,
+              "threshold": -230.40688903321708,
+              "in_space_acceptance": 0.6637931034482759,
+              "rejection": {
+                "beans": 0.49583333333333335,
+                "fcdd_apple": 0.9275,
+                "fcdd_other": 0.8875
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.27,
+              "threshold": -227.45093452985452,
+              "in_space_acceptance": 0.6594827586206896,
+              "rejection": {
+                "beans": 0.5116666666666667,
+                "fcdd_apple": 0.935,
+                "fcdd_other": 0.8966666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.28,
+              "threshold": -223.06019626795182,
+              "in_space_acceptance": 0.646551724137931,
+              "rejection": {
+                "beans": 0.5308333333333334,
+                "fcdd_apple": 0.9375,
+                "fcdd_other": 0.9083333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.29,
+              "threshold": -222.14023343493506,
+              "in_space_acceptance": 0.646551724137931,
+              "rejection": {
+                "beans": 0.535,
+                "fcdd_apple": 0.94,
+                "fcdd_other": 0.91
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.3,
+              "threshold": -220.19112633442884,
+              "in_space_acceptance": 0.6422413793103449,
+              "rejection": {
+                "beans": 0.545,
+                "fcdd_apple": 0.9425,
+                "fcdd_other": 0.9183333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.31,
+              "threshold": -218.99398941130795,
+              "in_space_acceptance": 0.6422413793103449,
+              "rejection": {
+                "beans": 0.555,
+                "fcdd_apple": 0.9425,
+                "fcdd_other": 0.9216666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.32,
+              "threshold": -218.3054669570629,
+              "in_space_acceptance": 0.625,
+              "rejection": {
+                "beans": 0.5608333333333333,
+                "fcdd_apple": 0.945,
+                "fcdd_other": 0.9225
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.33,
+              "threshold": -216.39716537637935,
+              "in_space_acceptance": 0.6120689655172413,
+              "rejection": {
+                "beans": 0.5708333333333333,
+                "fcdd_apple": 0.955,
+                "fcdd_other": 0.9283333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.34,
+              "threshold": -214.10198190742437,
+              "in_space_acceptance": 0.603448275862069,
+              "rejection": {
+                "beans": 0.585,
+                "fcdd_apple": 0.96,
+                "fcdd_other": 0.9333333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.35,
+              "threshold": -211.40622213186955,
+              "in_space_acceptance": 0.5948275862068966,
+              "rejection": {
+                "beans": 0.6041666666666666,
+                "fcdd_apple": 0.9625,
+                "fcdd_other": 0.9383333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.36,
+              "threshold": -210.35301661379432,
+              "in_space_acceptance": 0.5948275862068966,
+              "rejection": {
+                "beans": 0.61,
+                "fcdd_apple": 0.9675,
+                "fcdd_other": 0.9425
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.37,
+              "threshold": -205.4093949595535,
+              "in_space_acceptance": 0.5689655172413793,
+              "rejection": {
+                "beans": 0.6391666666666667,
+                "fcdd_apple": 0.9825,
+                "fcdd_other": 0.96
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.38,
+              "threshold": -202.91878055922788,
+              "in_space_acceptance": 0.5560344827586207,
+              "rejection": {
+                "beans": 0.6558333333333334,
+                "fcdd_apple": 0.9875,
+                "fcdd_other": 0.9658333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.39,
+              "threshold": -199.7440818837902,
+              "in_space_acceptance": 0.5431034482758621,
+              "rejection": {
+                "beans": 0.6675,
+                "fcdd_apple": 0.99,
+                "fcdd_other": 0.975
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.4,
+              "threshold": -195.57262091350765,
+              "in_space_acceptance": 0.5387931034482759,
+              "rejection": {
+                "beans": 0.6916666666666667,
+                "fcdd_apple": 0.9925,
+                "fcdd_other": 0.9841666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.41,
+              "threshold": -192.27020943370957,
+              "in_space_acceptance": 0.521551724137931,
+              "rejection": {
+                "beans": 0.705,
+                "fcdd_apple": 0.9925,
+                "fcdd_other": 0.9883333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.42,
+              "threshold": -189.3558038442086,
+              "in_space_acceptance": 0.5086206896551724,
+              "rejection": {
+                "beans": 0.7191666666666666,
+                "fcdd_apple": 0.995,
+                "fcdd_other": 0.9916666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.43,
+              "threshold": -188.51033789616972,
+              "in_space_acceptance": 0.5086206896551724,
+              "rejection": {
+                "beans": 0.7233333333333334,
+                "fcdd_apple": 0.995,
+                "fcdd_other": 0.9933333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.44,
+              "threshold": -187.17344871331326,
+              "in_space_acceptance": 0.5,
+              "rejection": {
+                "beans": 0.7283333333333334,
+                "fcdd_apple": 0.995,
+                "fcdd_other": 0.9933333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.45,
+              "threshold": -186.12961004431986,
+              "in_space_acceptance": 0.4956896551724138,
+              "rejection": {
+                "beans": 0.7316666666666667,
+                "fcdd_apple": 0.995,
+                "fcdd_other": 0.9933333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.46,
+              "threshold": -185.87918063140978,
+              "in_space_acceptance": 0.4956896551724138,
+              "rejection": {
+                "beans": 0.7333333333333333,
+                "fcdd_apple": 0.995,
+                "fcdd_other": 0.9933333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.47,
+              "threshold": -184.44850564103018,
+              "in_space_acceptance": 0.49137931034482757,
+              "rejection": {
+                "beans": 0.7441666666666666,
+                "fcdd_apple": 1.0,
+                "fcdd_other": 0.9941666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.48,
+              "threshold": -184.02580799698103,
+              "in_space_acceptance": 0.49137931034482757,
+              "rejection": {
+                "beans": 0.7475,
+                "fcdd_apple": 1.0,
+                "fcdd_other": 0.995
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.49,
+              "threshold": -180.93136586958434,
+              "in_space_acceptance": 0.47413793103448276,
+              "rejection": {
+                "beans": 0.7683333333333333,
+                "fcdd_apple": 1.0,
+                "fcdd_other": 0.9958333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.5,
+              "threshold": -176.9069607765961,
+              "in_space_acceptance": 0.44396551724137934,
+              "rejection": {
+                "beans": 0.7858333333333334,
+                "fcdd_apple": 1.0,
+                "fcdd_other": 0.9966666666666667
+              },
+              "meets_h7": false
+            }
+          ],
+          "h7_feasible": false,
+          "best_operating_point": null
+        }
+      ]
+    },
+    "s2_1010": {
+      "factors": {
+        "A": "icoral",
+        "Q": "onnx_fp32",
+        "G": "pq3bit",
+        "S": "source"
+      },
+      "seeds_with_feasible_point": "4/5",
+      "h7_main": true,
+      "near_ood_rejection_at_best": {
+        "per_seed": [
+          0.035833333333333335,
+          0.03333333333333333,
+          0.051666666666666666,
+          0.05416666666666667
+        ],
+        "mean": 0.04375,
+        "below_020_all": true
+      },
+      "best_points_per_seed": [
+        {
+          "q": 0.09,
+          "threshold": -403.3861056051802,
+          "in_space_acceptance": 0.9094827586206896,
+          "rejection": {
+            "beans": 0.035833333333333335,
+            "fcdd_apple": 0.5625,
+            "fcdd_other": 0.5808333333333333
+          },
+          "meets_h7": true
+        },
+        {
+          "q": 0.09,
+          "threshold": -413.1086464403208,
+          "in_space_acceptance": 0.9008620689655172,
+          "rejection": {
+            "beans": 0.03333333333333333,
+            "fcdd_apple": 0.5175,
+            "fcdd_other": 0.5041666666666667
+          },
+          "meets_h7": true
+        },
+        {
+          "q": 0.1,
+          "threshold": -401.56234775657595,
+          "in_space_acceptance": 0.9137931034482759,
+          "rejection": {
+            "beans": 0.051666666666666666,
+            "fcdd_apple": 0.535,
+            "fcdd_other": 0.53
+          },
+          "meets_h7": true
+        },
+        {
+          "q": 0.12,
+          "threshold": -400.84307493956777,
+          "in_space_acceptance": 0.9094827586206896,
+          "rejection": {
+            "beans": 0.05416666666666667,
+            "fcdd_apple": 0.645,
+            "fcdd_other": 0.6666666666666666
+          },
+          "meets_h7": true
+        }
+      ],
+      "per_seed": [
+        {
+          "seed": 0,
+          "n_tune": 232,
+          "n_eval": 232,
+          "n_ood": {
+            "beans": 1200,
+            "fcdd_apple": 400,
+            "fcdd_other": 1200
+          },
+          "operating_curve": [
+            {
+              "q": 0.01,
+              "threshold": -551.4057354360029,
+              "in_space_acceptance": 0.9956896551724138,
+              "rejection": {
+                "beans": 0.0,
+                "fcdd_apple": 0.05,
+                "fcdd_other": 0.0225
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.02,
+              "threshold": -472.82881671466424,
+              "in_space_acceptance": 0.9870689655172413,
+              "rejection": {
+                "beans": 0.0016666666666666668,
+                "fcdd_apple": 0.2225,
+                "fcdd_other": 0.20666666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.03,
+              "threshold": -452.48099835971243,
+              "in_space_acceptance": 0.9741379310344828,
+              "rejection": {
+                "beans": 0.0025,
+                "fcdd_apple": 0.295,
+                "fcdd_other": 0.2916666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.04,
+              "threshold": -445.76071221927333,
+              "in_space_acceptance": 0.9741379310344828,
+              "rejection": {
+                "beans": 0.0033333333333333335,
+                "fcdd_apple": 0.3175,
+                "fcdd_other": 0.32666666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.05,
+              "threshold": -433.7901680630343,
+              "in_space_acceptance": 0.9482758620689655,
+              "rejection": {
+                "beans": 0.01,
+                "fcdd_apple": 0.38,
+                "fcdd_other": 0.4033333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.06,
+              "threshold": -425.91931536849813,
+              "in_space_acceptance": 0.9439655172413793,
+              "rejection": {
+                "beans": 0.014166666666666666,
+                "fcdd_apple": 0.4275,
+                "fcdd_other": 0.4483333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.07,
+              "threshold": -419.92185319724825,
+              "in_space_acceptance": 0.9439655172413793,
+              "rejection": {
+                "beans": 0.019166666666666665,
+                "fcdd_apple": 0.47,
+                "fcdd_other": 0.485
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.08,
+              "threshold": -410.3190175806235,
+              "in_space_acceptance": 0.9267241379310345,
+              "rejection": {
+                "beans": 0.02666666666666667,
+                "fcdd_apple": 0.5225,
+                "fcdd_other": 0.535
+              },
+              "meets_h7": true
+            },
+            {
+              "q": 0.09,
+              "threshold": -403.3861056051802,
+              "in_space_acceptance": 0.9094827586206896,
+              "rejection": {
+                "beans": 0.035833333333333335,
+                "fcdd_apple": 0.5625,
+                "fcdd_other": 0.5808333333333333
+              },
+              "meets_h7": true
+            },
+            {
+              "q": 0.1,
+              "threshold": -396.97947083579464,
+              "in_space_acceptance": 0.896551724137931,
+              "rejection": {
+                "beans": 0.04666666666666667,
+                "fcdd_apple": 0.605,
+                "fcdd_other": 0.6141666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.11,
+              "threshold": -393.45470503587774,
+              "in_space_acceptance": 0.8836206896551724,
+              "rejection": {
+                "beans": 0.058333333333333334,
+                "fcdd_apple": 0.63,
+                "fcdd_other": 0.6383333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.12,
+              "threshold": -385.7681031918459,
+              "in_space_acceptance": 0.8836206896551724,
+              "rejection": {
+                "beans": 0.07833333333333334,
+                "fcdd_apple": 0.67,
+                "fcdd_other": 0.6891666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.13,
+              "threshold": -384.9763064183776,
+              "in_space_acceptance": 0.8836206896551724,
+              "rejection": {
+                "beans": 0.08083333333333333,
+                "fcdd_apple": 0.6775,
+                "fcdd_other": 0.6925
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.14,
+              "threshold": -382.07339351586376,
+              "in_space_acceptance": 0.8836206896551724,
+              "rejection": {
+                "beans": 0.08916666666666667,
+                "fcdd_apple": 0.705,
+                "fcdd_other": 0.7066666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.15,
+              "threshold": -379.0026992428476,
+              "in_space_acceptance": 0.875,
+              "rejection": {
+                "beans": 0.1,
+                "fcdd_apple": 0.7175,
+                "fcdd_other": 0.7266666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.16,
+              "threshold": -376.75582465915204,
+              "in_space_acceptance": 0.875,
+              "rejection": {
+                "beans": 0.10833333333333334,
+                "fcdd_apple": 0.7325,
+                "fcdd_other": 0.7358333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.17,
+              "threshold": -373.2258887978615,
+              "in_space_acceptance": 0.8663793103448276,
+              "rejection": {
+                "beans": 0.12666666666666668,
+                "fcdd_apple": 0.7625,
+                "fcdd_other": 0.7583333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.18,
+              "threshold": -370.3848775324421,
+              "in_space_acceptance": 0.8620689655172413,
+              "rejection": {
+                "beans": 0.13666666666666666,
+                "fcdd_apple": 0.775,
+                "fcdd_other": 0.7683333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.19,
+              "threshold": -369.5385934884744,
+              "in_space_acceptance": 0.8577586206896551,
+              "rejection": {
+                "beans": 0.13833333333333334,
+                "fcdd_apple": 0.7775,
+                "fcdd_other": 0.7708333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.2,
+              "threshold": -366.84590582372454,
+              "in_space_acceptance": 0.8405172413793104,
+              "rejection": {
+                "beans": 0.15083333333333335,
+                "fcdd_apple": 0.795,
+                "fcdd_other": 0.7891666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.21,
+              "threshold": -364.2163927282448,
+              "in_space_acceptance": 0.8405172413793104,
+              "rejection": {
+                "beans": 0.16166666666666665,
+                "fcdd_apple": 0.8,
+                "fcdd_other": 0.8016666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.22,
+              "threshold": -359.54672396037677,
+              "in_space_acceptance": 0.8275862068965517,
+              "rejection": {
+                "beans": 0.19166666666666668,
+                "fcdd_apple": 0.8125,
+                "fcdd_other": 0.825
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.23,
+              "threshold": -357.9399745522123,
+              "in_space_acceptance": 0.8275862068965517,
+              "rejection": {
+                "beans": 0.20083333333333334,
+                "fcdd_apple": 0.8175,
+                "fcdd_other": 0.8341666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.24,
+              "threshold": -357.1808261245407,
+              "in_space_acceptance": 0.8275862068965517,
+              "rejection": {
+                "beans": 0.2025,
+                "fcdd_apple": 0.8225,
+                "fcdd_other": 0.8408333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.25,
+              "threshold": -355.07093764542697,
+              "in_space_acceptance": 0.8189655172413793,
+              "rejection": {
+                "beans": 0.21,
+                "fcdd_apple": 0.8375,
+                "fcdd_other": 0.8541666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.26,
+              "threshold": -351.57422214241376,
+              "in_space_acceptance": 0.8017241379310345,
+              "rejection": {
+                "beans": 0.2275,
+                "fcdd_apple": 0.86,
+                "fcdd_other": 0.8675
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.27,
+              "threshold": -347.0643965693353,
+              "in_space_acceptance": 0.7887931034482759,
+              "rejection": {
+                "beans": 0.25583333333333336,
+                "fcdd_apple": 0.8775,
+                "fcdd_other": 0.89
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.28,
+              "threshold": -340.58993107246164,
+              "in_space_acceptance": 0.7543103448275862,
+              "rejection": {
+                "beans": 0.3016666666666667,
+                "fcdd_apple": 0.9125,
+                "fcdd_other": 0.9108333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.29,
+              "threshold": -336.3174093990182,
+              "in_space_acceptance": 0.728448275862069,
+              "rejection": {
+                "beans": 0.3308333333333333,
+                "fcdd_apple": 0.9425,
+                "fcdd_other": 0.925
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.3,
+              "threshold": -335.1103581710465,
+              "in_space_acceptance": 0.7198275862068966,
+              "rejection": {
+                "beans": 0.33916666666666667,
+                "fcdd_apple": 0.9475,
+                "fcdd_other": 0.9325
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.31,
+              "threshold": -333.8140936479156,
+              "in_space_acceptance": 0.7155172413793104,
+              "rejection": {
+                "beans": 0.3491666666666667,
+                "fcdd_apple": 0.9475,
+                "fcdd_other": 0.9366666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.32,
+              "threshold": -331.5695498544412,
+              "in_space_acceptance": 0.6982758620689655,
+              "rejection": {
+                "beans": 0.36083333333333334,
+                "fcdd_apple": 0.9525,
+                "fcdd_other": 0.9441666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.33,
+              "threshold": -330.0582931003954,
+              "in_space_acceptance": 0.6982758620689655,
+              "rejection": {
+                "beans": 0.37666666666666665,
+                "fcdd_apple": 0.9575,
+                "fcdd_other": 0.9491666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.34,
+              "threshold": -328.561440483079,
+              "in_space_acceptance": 0.6853448275862069,
+              "rejection": {
+                "beans": 0.3875,
+                "fcdd_apple": 0.9625,
+                "fcdd_other": 0.9525
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.35,
+              "threshold": -327.19246003942425,
+              "in_space_acceptance": 0.6767241379310345,
+              "rejection": {
+                "beans": 0.3975,
+                "fcdd_apple": 0.9625,
+                "fcdd_other": 0.955
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.36,
+              "threshold": -325.04999050413085,
+              "in_space_acceptance": 0.6594827586206896,
+              "rejection": {
+                "beans": 0.4125,
+                "fcdd_apple": 0.9675,
+                "fcdd_other": 0.9583333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.37,
+              "threshold": -323.879334076153,
+              "in_space_acceptance": 0.6594827586206896,
+              "rejection": {
+                "beans": 0.42083333333333334,
+                "fcdd_apple": 0.975,
+                "fcdd_other": 0.96
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.38,
+              "threshold": -322.5143182122883,
+              "in_space_acceptance": 0.6551724137931034,
+              "rejection": {
+                "beans": 0.43416666666666665,
+                "fcdd_apple": 0.98,
+                "fcdd_other": 0.9633333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.39,
+              "threshold": -320.8333978567286,
+              "in_space_acceptance": 0.6422413793103449,
+              "rejection": {
+                "beans": 0.45,
+                "fcdd_apple": 0.98,
+                "fcdd_other": 0.9683333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.4,
+              "threshold": -318.7843134046576,
+              "in_space_acceptance": 0.6293103448275862,
+              "rejection": {
+                "beans": 0.47333333333333333,
+                "fcdd_apple": 0.98,
+                "fcdd_other": 0.9716666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.41,
+              "threshold": -317.65615879177574,
+              "in_space_acceptance": 0.6206896551724138,
+              "rejection": {
+                "beans": 0.48083333333333333,
+                "fcdd_apple": 0.98,
+                "fcdd_other": 0.9716666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.42,
+              "threshold": -315.85501942984166,
+              "in_space_acceptance": 0.603448275862069,
+              "rejection": {
+                "beans": 0.49666666666666665,
+                "fcdd_apple": 0.98,
+                "fcdd_other": 0.9733333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.43,
+              "threshold": -315.26063407939773,
+              "in_space_acceptance": 0.5991379310344828,
+              "rejection": {
+                "beans": 0.5058333333333334,
+                "fcdd_apple": 0.98,
+                "fcdd_other": 0.9733333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.44,
+              "threshold": -313.64449823081577,
+              "in_space_acceptance": 0.5905172413793104,
+              "rejection": {
+                "beans": 0.5241666666666667,
+                "fcdd_apple": 0.98,
+                "fcdd_other": 0.9791666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.45,
+              "threshold": -312.14950506611456,
+              "in_space_acceptance": 0.5775862068965517,
+              "rejection": {
+                "beans": 0.5366666666666666,
+                "fcdd_apple": 0.98,
+                "fcdd_other": 0.9833333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.46,
+              "threshold": -310.4093668732861,
+              "in_space_acceptance": 0.5732758620689655,
+              "rejection": {
+                "beans": 0.5483333333333333,
+                "fcdd_apple": 0.98,
+                "fcdd_other": 0.9866666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.47,
+              "threshold": -308.2921918937773,
+              "in_space_acceptance": 0.5689655172413793,
+              "rejection": {
+                "beans": 0.5675,
+                "fcdd_apple": 0.98,
+                "fcdd_other": 0.9908333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.48,
+              "threshold": -306.6745800745062,
+              "in_space_acceptance": 0.5603448275862069,
+              "rejection": {
+                "beans": 0.5791666666666667,
+                "fcdd_apple": 0.98,
+                "fcdd_other": 0.9916666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.49,
+              "threshold": -302.88312477128903,
+              "in_space_acceptance": 0.5517241379310345,
+              "rejection": {
+                "beans": 0.6058333333333333,
+                "fcdd_apple": 0.9875,
+                "fcdd_other": 0.995
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.5,
+              "threshold": -302.03396329146494,
+              "in_space_acceptance": 0.5517241379310345,
+              "rejection": {
+                "beans": 0.6158333333333333,
+                "fcdd_apple": 0.99,
+                "fcdd_other": 0.995
+              },
+              "meets_h7": false
+            }
+          ],
+          "h7_feasible": true,
+          "best_operating_point": {
+            "q": 0.09,
+            "threshold": -403.3861056051802,
+            "in_space_acceptance": 0.9094827586206896,
+            "rejection": {
+              "beans": 0.035833333333333335,
+              "fcdd_apple": 0.5625,
+              "fcdd_other": 0.5808333333333333
+            },
+            "meets_h7": true
+          }
+        },
+        {
+          "seed": 1,
+          "n_tune": 232,
+          "n_eval": 232,
+          "n_ood": {
+            "beans": 1200,
+            "fcdd_apple": 400,
+            "fcdd_other": 1200
+          },
+          "operating_curve": [
+            {
+              "q": 0.01,
+              "threshold": -491.5100005467589,
+              "in_space_acceptance": 0.9870689655172413,
+              "rejection": {
+                "beans": 0.0016666666666666668,
+                "fcdd_apple": 0.1725,
+                "fcdd_other": 0.13916666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.02,
+              "threshold": -456.43880025928587,
+              "in_space_acceptance": 0.9568965517241379,
+              "rejection": {
+                "beans": 0.005833333333333334,
+                "fcdd_apple": 0.29,
+                "fcdd_other": 0.28
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.03,
+              "threshold": -450.8858247755764,
+              "in_space_acceptance": 0.9439655172413793,
+              "rejection": {
+                "beans": 0.009166666666666667,
+                "fcdd_apple": 0.3025,
+                "fcdd_other": 0.3025
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.04,
+              "threshold": -446.24964616923376,
+              "in_space_acceptance": 0.9396551724137931,
+              "rejection": {
+                "beans": 0.010833333333333334,
+                "fcdd_apple": 0.32,
+                "fcdd_other": 0.3225
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.05,
+              "threshold": -434.72411940418124,
+              "in_space_acceptance": 0.9310344827586207,
+              "rejection": {
+                "beans": 0.014166666666666666,
+                "fcdd_apple": 0.3825,
+                "fcdd_other": 0.3858333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.06,
+              "threshold": -429.9920861946629,
+              "in_space_acceptance": 0.9267241379310345,
+              "rejection": {
+                "beans": 0.015833333333333335,
+                "fcdd_apple": 0.405,
+                "fcdd_other": 0.4083333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.07,
+              "threshold": -422.4027431990121,
+              "in_space_acceptance": 0.9181034482758621,
+              "rejection": {
+                "beans": 0.0225,
+                "fcdd_apple": 0.465,
+                "fcdd_other": 0.4533333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.08,
+              "threshold": -418.012466120009,
+              "in_space_acceptance": 0.9181034482758621,
+              "rejection": {
+                "beans": 0.0275,
+                "fcdd_apple": 0.495,
+                "fcdd_other": 0.4775
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.09,
+              "threshold": -413.1086464403208,
+              "in_space_acceptance": 0.9008620689655172,
+              "rejection": {
+                "beans": 0.03333333333333333,
+                "fcdd_apple": 0.5175,
+                "fcdd_other": 0.5041666666666667
+              },
+              "meets_h7": true
+            },
+            {
+              "q": 0.1,
+              "threshold": -399.577648574591,
+              "in_space_acceptance": 0.8879310344827587,
+              "rejection": {
+                "beans": 0.0575,
+                "fcdd_apple": 0.595,
+                "fcdd_other": 0.5833333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.11,
+              "threshold": -394.77824409353855,
+              "in_space_acceptance": 0.8836206896551724,
+              "rejection": {
+                "beans": 0.0725,
+                "fcdd_apple": 0.6125,
+                "fcdd_other": 0.6108333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.12,
+              "threshold": -384.6895557864049,
+              "in_space_acceptance": 0.8706896551724138,
+              "rejection": {
+                "beans": 0.1,
+                "fcdd_apple": 0.665,
+                "fcdd_other": 0.6758333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.13,
+              "threshold": -382.62762273657535,
+              "in_space_acceptance": 0.8577586206896551,
+              "rejection": {
+                "beans": 0.10333333333333333,
+                "fcdd_apple": 0.685,
+                "fcdd_other": 0.6916666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.14,
+              "threshold": -378.9455495010035,
+              "in_space_acceptance": 0.8491379310344828,
+              "rejection": {
+                "beans": 0.1175,
+                "fcdd_apple": 0.7075,
+                "fcdd_other": 0.71
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.15,
+              "threshold": -375.5954187943115,
+              "in_space_acceptance": 0.8491379310344828,
+              "rejection": {
+                "beans": 0.13333333333333333,
+                "fcdd_apple": 0.725,
+                "fcdd_other": 0.73
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.16,
+              "threshold": -373.91227654888576,
+              "in_space_acceptance": 0.8491379310344828,
+              "rejection": {
+                "beans": 0.1425,
+                "fcdd_apple": 0.73,
+                "fcdd_other": 0.7408333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.17,
+              "threshold": -369.9896412538014,
+              "in_space_acceptance": 0.8448275862068966,
+              "rejection": {
+                "beans": 0.1575,
+                "fcdd_apple": 0.7525,
+                "fcdd_other": 0.755
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.18,
+              "threshold": -365.17500010594506,
+              "in_space_acceptance": 0.8405172413793104,
+              "rejection": {
+                "beans": 0.17916666666666667,
+                "fcdd_apple": 0.7925,
+                "fcdd_other": 0.7766666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.19,
+              "threshold": -357.985802383096,
+              "in_space_acceptance": 0.8146551724137931,
+              "rejection": {
+                "beans": 0.21416666666666667,
+                "fcdd_apple": 0.84,
+                "fcdd_other": 0.8133333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.2,
+              "threshold": -354.63086831942155,
+              "in_space_acceptance": 0.8060344827586207,
+              "rejection": {
+                "beans": 0.23083333333333333,
+                "fcdd_apple": 0.8575,
+                "fcdd_other": 0.8266666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.21,
+              "threshold": -351.8990662030644,
+              "in_space_acceptance": 0.7887931034482759,
+              "rejection": {
+                "beans": 0.245,
+                "fcdd_apple": 0.8675,
+                "fcdd_other": 0.8375
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.22,
+              "threshold": -349.88143072284754,
+              "in_space_acceptance": 0.7844827586206896,
+              "rejection": {
+                "beans": 0.25833333333333336,
+                "fcdd_apple": 0.8725,
+                "fcdd_other": 0.8441666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.23,
+              "threshold": -345.82361304949006,
+              "in_space_acceptance": 0.75,
+              "rejection": {
+                "beans": 0.2733333333333333,
+                "fcdd_apple": 0.875,
+                "fcdd_other": 0.8641666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.24,
+              "threshold": -343.4464503213765,
+              "in_space_acceptance": 0.7370689655172413,
+              "rejection": {
+                "beans": 0.2841666666666667,
+                "fcdd_apple": 0.8775,
+                "fcdd_other": 0.8741666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.25,
+              "threshold": -338.8845044978,
+              "in_space_acceptance": 0.7241379310344828,
+              "rejection": {
+                "beans": 0.31333333333333335,
+                "fcdd_apple": 0.895,
+                "fcdd_other": 0.8933333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.26,
+              "threshold": -336.28387347155433,
+              "in_space_acceptance": 0.7068965517241379,
+              "rejection": {
+                "beans": 0.335,
+                "fcdd_apple": 0.9025,
+                "fcdd_other": 0.8991666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.27,
+              "threshold": -334.1496568673727,
+              "in_space_acceptance": 0.6982758620689655,
+              "rejection": {
+                "beans": 0.3516666666666667,
+                "fcdd_apple": 0.9075,
+                "fcdd_other": 0.9091666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.28,
+              "threshold": -332.6577817620751,
+              "in_space_acceptance": 0.6896551724137931,
+              "rejection": {
+                "beans": 0.36583333333333334,
+                "fcdd_apple": 0.9125,
+                "fcdd_other": 0.9125
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.29,
+              "threshold": -330.7326187567914,
+              "in_space_acceptance": 0.6767241379310345,
+              "rejection": {
+                "beans": 0.37666666666666665,
+                "fcdd_apple": 0.9175,
+                "fcdd_other": 0.9175
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.3,
+              "threshold": -329.7800535254149,
+              "in_space_acceptance": 0.6767241379310345,
+              "rejection": {
+                "beans": 0.385,
+                "fcdd_apple": 0.9225,
+                "fcdd_other": 0.92
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.31,
+              "threshold": -326.9410802354303,
+              "in_space_acceptance": 0.6594827586206896,
+              "rejection": {
+                "beans": 0.4041666666666667,
+                "fcdd_apple": 0.935,
+                "fcdd_other": 0.9291666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.32,
+              "threshold": -324.7281995197925,
+              "in_space_acceptance": 0.6508620689655172,
+              "rejection": {
+                "beans": 0.41833333333333333,
+                "fcdd_apple": 0.9425,
+                "fcdd_other": 0.9358333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.33,
+              "threshold": -320.3841399806153,
+              "in_space_acceptance": 0.625,
+              "rejection": {
+                "beans": 0.4533333333333333,
+                "fcdd_apple": 0.955,
+                "fcdd_other": 0.9466666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.34,
+              "threshold": -319.70291134712403,
+              "in_space_acceptance": 0.625,
+              "rejection": {
+                "beans": 0.4608333333333333,
+                "fcdd_apple": 0.955,
+                "fcdd_other": 0.9475
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.35,
+              "threshold": -318.4005778131445,
+              "in_space_acceptance": 0.6120689655172413,
+              "rejection": {
+                "beans": 0.4708333333333333,
+                "fcdd_apple": 0.9625,
+                "fcdd_other": 0.9491666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.36,
+              "threshold": -315.963102530806,
+              "in_space_acceptance": 0.5905172413793104,
+              "rejection": {
+                "beans": 0.4825,
+                "fcdd_apple": 0.9675,
+                "fcdd_other": 0.9575
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.37,
+              "threshold": -315.63094778428535,
+              "in_space_acceptance": 0.5905172413793104,
+              "rejection": {
+                "beans": 0.48583333333333334,
+                "fcdd_apple": 0.9675,
+                "fcdd_other": 0.9591666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.38,
+              "threshold": -314.4126185482174,
+              "in_space_acceptance": 0.5862068965517241,
+              "rejection": {
+                "beans": 0.49666666666666665,
+                "fcdd_apple": 0.9675,
+                "fcdd_other": 0.9608333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.39,
+              "threshold": -312.60614661901167,
+              "in_space_acceptance": 0.5862068965517241,
+              "rejection": {
+                "beans": 0.51,
+                "fcdd_apple": 0.97,
+                "fcdd_other": 0.965
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.4,
+              "threshold": -308.6180387836538,
+              "in_space_acceptance": 0.5646551724137931,
+              "rejection": {
+                "beans": 0.5308333333333334,
+                "fcdd_apple": 0.975,
+                "fcdd_other": 0.9725
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.41,
+              "threshold": -307.86031957261946,
+              "in_space_acceptance": 0.5646551724137931,
+              "rejection": {
+                "beans": 0.5366666666666666,
+                "fcdd_apple": 0.9775,
+                "fcdd_other": 0.9741666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.42,
+              "threshold": -306.8160650944441,
+              "in_space_acceptance": 0.5603448275862069,
+              "rejection": {
+                "beans": 0.5416666666666666,
+                "fcdd_apple": 0.98,
+                "fcdd_other": 0.9758333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.43,
+              "threshold": -301.8299268455696,
+              "in_space_acceptance": 0.5172413793103449,
+              "rejection": {
+                "beans": 0.5758333333333333,
+                "fcdd_apple": 0.9875,
+                "fcdd_other": 0.9858333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.44,
+              "threshold": -299.320995634843,
+              "in_space_acceptance": 0.5043103448275862,
+              "rejection": {
+                "beans": 0.5866666666666667,
+                "fcdd_apple": 0.9925,
+                "fcdd_other": 0.9883333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.45,
+              "threshold": -297.957343266381,
+              "in_space_acceptance": 0.49137931034482757,
+              "rejection": {
+                "beans": 0.5983333333333334,
+                "fcdd_apple": 0.9925,
+                "fcdd_other": 0.99
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.46,
+              "threshold": -296.3105666118292,
+              "in_space_acceptance": 0.4827586206896552,
+              "rejection": {
+                "beans": 0.6183333333333333,
+                "fcdd_apple": 0.995,
+                "fcdd_other": 0.99
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.47,
+              "threshold": -292.69192808621165,
+              "in_space_acceptance": 0.4525862068965517,
+              "rejection": {
+                "beans": 0.6441666666666667,
+                "fcdd_apple": 0.9975,
+                "fcdd_other": 0.9908333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.48,
+              "threshold": -290.36806778654994,
+              "in_space_acceptance": 0.4353448275862069,
+              "rejection": {
+                "beans": 0.6641666666666667,
+                "fcdd_apple": 0.9975,
+                "fcdd_other": 0.9941666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.49,
+              "threshold": -289.15451382238007,
+              "in_space_acceptance": 0.4353448275862069,
+              "rejection": {
+                "beans": 0.6716666666666666,
+                "fcdd_apple": 0.9975,
+                "fcdd_other": 0.9958333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.5,
+              "threshold": -287.6954056589018,
+              "in_space_acceptance": 0.4224137931034483,
+              "rejection": {
+                "beans": 0.6833333333333333,
+                "fcdd_apple": 0.9975,
+                "fcdd_other": 0.9975
+              },
+              "meets_h7": false
+            }
+          ],
+          "h7_feasible": true,
+          "best_operating_point": {
+            "q": 0.09,
+            "threshold": -413.1086464403208,
+            "in_space_acceptance": 0.9008620689655172,
+            "rejection": {
+              "beans": 0.03333333333333333,
+              "fcdd_apple": 0.5175,
+              "fcdd_other": 0.5041666666666667
+            },
+            "meets_h7": true
+          }
+        },
+        {
+          "seed": 2,
+          "n_tune": 232,
+          "n_eval": 232,
+          "n_ood": {
+            "beans": 1200,
+            "fcdd_apple": 400,
+            "fcdd_other": 1200
+          },
+          "operating_curve": [
+            {
+              "q": 0.01,
+              "threshold": -542.2637822903337,
+              "in_space_acceptance": 0.9956896551724138,
+              "rejection": {
+                "beans": 0.0,
+                "fcdd_apple": 0.0525,
+                "fcdd_other": 0.028333333333333332
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.02,
+              "threshold": -492.4467920238193,
+              "in_space_acceptance": 0.9913793103448276,
+              "rejection": {
+                "beans": 0.0008333333333333334,
+                "fcdd_apple": 0.1375,
+                "fcdd_other": 0.11083333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.03,
+              "threshold": -467.4071478492445,
+              "in_space_acceptance": 0.9741379310344828,
+              "rejection": {
+                "beans": 0.0025,
+                "fcdd_apple": 0.225,
+                "fcdd_other": 0.19083333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.04,
+              "threshold": -440.5567016518068,
+              "in_space_acceptance": 0.9568965517241379,
+              "rejection": {
+                "beans": 0.010833333333333334,
+                "fcdd_apple": 0.325,
+                "fcdd_other": 0.31166666666666665
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.05,
+              "threshold": -436.87534065500165,
+              "in_space_acceptance": 0.9482758620689655,
+              "rejection": {
+                "beans": 0.011666666666666667,
+                "fcdd_apple": 0.3375,
+                "fcdd_other": 0.33166666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.06,
+              "threshold": -428.1386797037162,
+              "in_space_acceptance": 0.9439655172413793,
+              "rejection": {
+                "beans": 0.013333333333333334,
+                "fcdd_apple": 0.3875,
+                "fcdd_other": 0.3775
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.07,
+              "threshold": -420.0849964102264,
+              "in_space_acceptance": 0.9353448275862069,
+              "rejection": {
+                "beans": 0.020833333333333332,
+                "fcdd_apple": 0.425,
+                "fcdd_other": 0.42333333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.08,
+              "threshold": -418.62746690634043,
+              "in_space_acceptance": 0.9310344827586207,
+              "rejection": {
+                "beans": 0.023333333333333334,
+                "fcdd_apple": 0.4325,
+                "fcdd_other": 0.43
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.09,
+              "threshold": -413.9817609571969,
+              "in_space_acceptance": 0.9224137931034483,
+              "rejection": {
+                "beans": 0.03,
+                "fcdd_apple": 0.46,
+                "fcdd_other": 0.4525
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.1,
+              "threshold": -401.56234775657595,
+              "in_space_acceptance": 0.9137931034482759,
+              "rejection": {
+                "beans": 0.051666666666666666,
+                "fcdd_apple": 0.535,
+                "fcdd_other": 0.53
+              },
+              "meets_h7": true
+            },
+            {
+              "q": 0.11,
+              "threshold": -388.78953133503154,
+              "in_space_acceptance": 0.896551724137931,
+              "rejection": {
+                "beans": 0.07916666666666666,
+                "fcdd_apple": 0.6225,
+                "fcdd_other": 0.6
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.12,
+              "threshold": -386.3852949309647,
+              "in_space_acceptance": 0.8922413793103449,
+              "rejection": {
+                "beans": 0.08583333333333333,
+                "fcdd_apple": 0.6375,
+                "fcdd_other": 0.6158333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.13,
+              "threshold": -384.8990367197318,
+              "in_space_acceptance": 0.8922413793103449,
+              "rejection": {
+                "beans": 0.09,
+                "fcdd_apple": 0.65,
+                "fcdd_other": 0.625
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.14,
+              "threshold": -381.68226544362545,
+              "in_space_acceptance": 0.8879310344827587,
+              "rejection": {
+                "beans": 0.09416666666666666,
+                "fcdd_apple": 0.6675,
+                "fcdd_other": 0.6508333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.15,
+              "threshold": -374.474735520895,
+              "in_space_acceptance": 0.8706896551724138,
+              "rejection": {
+                "beans": 0.1225,
+                "fcdd_apple": 0.7175,
+                "fcdd_other": 0.6966666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.16,
+              "threshold": -370.626936467246,
+              "in_space_acceptance": 0.8405172413793104,
+              "rejection": {
+                "beans": 0.13166666666666665,
+                "fcdd_apple": 0.74,
+                "fcdd_other": 0.7175
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.17,
+              "threshold": -368.88923991384206,
+              "in_space_acceptance": 0.8362068965517241,
+              "rejection": {
+                "beans": 0.14166666666666666,
+                "fcdd_apple": 0.75,
+                "fcdd_other": 0.7266666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.18,
+              "threshold": -364.55738695669993,
+              "in_space_acceptance": 0.8146551724137931,
+              "rejection": {
+                "beans": 0.165,
+                "fcdd_apple": 0.775,
+                "fcdd_other": 0.7458333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.19,
+              "threshold": -358.64758460117605,
+              "in_space_acceptance": 0.8017241379310345,
+              "rejection": {
+                "beans": 0.20166666666666666,
+                "fcdd_apple": 0.8025,
+                "fcdd_other": 0.77
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.2,
+              "threshold": -356.2068864319293,
+              "in_space_acceptance": 0.7931034482758621,
+              "rejection": {
+                "beans": 0.21416666666666667,
+                "fcdd_apple": 0.8125,
+                "fcdd_other": 0.7833333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.21,
+              "threshold": -352.8097192117163,
+              "in_space_acceptance": 0.7801724137931034,
+              "rejection": {
+                "beans": 0.2375,
+                "fcdd_apple": 0.825,
+                "fcdd_other": 0.7983333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.22,
+              "threshold": -347.83305597685984,
+              "in_space_acceptance": 0.7413793103448276,
+              "rejection": {
+                "beans": 0.26916666666666667,
+                "fcdd_apple": 0.8525,
+                "fcdd_other": 0.82
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.23,
+              "threshold": -345.9861899059952,
+              "in_space_acceptance": 0.728448275862069,
+              "rejection": {
+                "beans": 0.2783333333333333,
+                "fcdd_apple": 0.8575,
+                "fcdd_other": 0.8308333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.24,
+              "threshold": -343.2368835203459,
+              "in_space_acceptance": 0.7198275862068966,
+              "rejection": {
+                "beans": 0.2991666666666667,
+                "fcdd_apple": 0.87,
+                "fcdd_other": 0.8441666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.25,
+              "threshold": -342.480628918374,
+              "in_space_acceptance": 0.7198275862068966,
+              "rejection": {
+                "beans": 0.30416666666666664,
+                "fcdd_apple": 0.8725,
+                "fcdd_other": 0.8458333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.26,
+              "threshold": -339.9872295370583,
+              "in_space_acceptance": 0.7025862068965517,
+              "rejection": {
+                "beans": 0.32,
+                "fcdd_apple": 0.8825,
+                "fcdd_other": 0.8575
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.27,
+              "threshold": -339.01693226268014,
+              "in_space_acceptance": 0.7025862068965517,
+              "rejection": {
+                "beans": 0.32916666666666666,
+                "fcdd_apple": 0.885,
+                "fcdd_other": 0.86
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.28,
+              "threshold": -337.226514553859,
+              "in_space_acceptance": 0.6939655172413793,
+              "rejection": {
+                "beans": 0.3475,
+                "fcdd_apple": 0.8875,
+                "fcdd_other": 0.8691666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.29,
+              "threshold": -335.8599181945768,
+              "in_space_acceptance": 0.6896551724137931,
+              "rejection": {
+                "beans": 0.365,
+                "fcdd_apple": 0.89,
+                "fcdd_other": 0.8741666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.3,
+              "threshold": -334.4595137353098,
+              "in_space_acceptance": 0.6853448275862069,
+              "rejection": {
+                "beans": 0.38083333333333336,
+                "fcdd_apple": 0.89,
+                "fcdd_other": 0.8783333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.31,
+              "threshold": -330.65844484205707,
+              "in_space_acceptance": 0.6594827586206896,
+              "rejection": {
+                "beans": 0.4116666666666667,
+                "fcdd_apple": 0.9075,
+                "fcdd_other": 0.8941666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.32,
+              "threshold": -327.75873278787066,
+              "in_space_acceptance": 0.6422413793103449,
+              "rejection": {
+                "beans": 0.4275,
+                "fcdd_apple": 0.9125,
+                "fcdd_other": 0.9058333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.33,
+              "threshold": -326.4621796022234,
+              "in_space_acceptance": 0.6379310344827587,
+              "rejection": {
+                "beans": 0.44083333333333335,
+                "fcdd_apple": 0.9175,
+                "fcdd_other": 0.9083333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.34,
+              "threshold": -325.2782538552099,
+              "in_space_acceptance": 0.6293103448275862,
+              "rejection": {
+                "beans": 0.44916666666666666,
+                "fcdd_apple": 0.925,
+                "fcdd_other": 0.9133333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.35,
+              "threshold": -322.2163470905225,
+              "in_space_acceptance": 0.625,
+              "rejection": {
+                "beans": 0.4675,
+                "fcdd_apple": 0.9375,
+                "fcdd_other": 0.9208333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.36,
+              "threshold": -319.7397054043197,
+              "in_space_acceptance": 0.6163793103448276,
+              "rejection": {
+                "beans": 0.49083333333333334,
+                "fcdd_apple": 0.9425,
+                "fcdd_other": 0.93
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.37,
+              "threshold": -316.8317286119481,
+              "in_space_acceptance": 0.6120689655172413,
+              "rejection": {
+                "beans": 0.5141666666666667,
+                "fcdd_apple": 0.95,
+                "fcdd_other": 0.9383333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.38,
+              "threshold": -315.07750312552446,
+              "in_space_acceptance": 0.5991379310344828,
+              "rejection": {
+                "beans": 0.5308333333333334,
+                "fcdd_apple": 0.9575,
+                "fcdd_other": 0.9408333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.39,
+              "threshold": -313.26970878844344,
+              "in_space_acceptance": 0.5862068965517241,
+              "rejection": {
+                "beans": 0.5516666666666666,
+                "fcdd_apple": 0.9575,
+                "fcdd_other": 0.9516666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.4,
+              "threshold": -310.90476650335484,
+              "in_space_acceptance": 0.5689655172413793,
+              "rejection": {
+                "beans": 0.5725,
+                "fcdd_apple": 0.9625,
+                "fcdd_other": 0.9575
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.41,
+              "threshold": -309.51430356933037,
+              "in_space_acceptance": 0.5646551724137931,
+              "rejection": {
+                "beans": 0.5841666666666666,
+                "fcdd_apple": 0.965,
+                "fcdd_other": 0.9575
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.42,
+              "threshold": -307.0102208524088,
+              "in_space_acceptance": 0.5344827586206896,
+              "rejection": {
+                "beans": 0.6041666666666666,
+                "fcdd_apple": 0.9675,
+                "fcdd_other": 0.9641666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.43,
+              "threshold": -305.57719277069157,
+              "in_space_acceptance": 0.5258620689655172,
+              "rejection": {
+                "beans": 0.6166666666666667,
+                "fcdd_apple": 0.9725,
+                "fcdd_other": 0.9675
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.44,
+              "threshold": -303.4624098635908,
+              "in_space_acceptance": 0.5172413793103449,
+              "rejection": {
+                "beans": 0.6366666666666667,
+                "fcdd_apple": 0.975,
+                "fcdd_other": 0.9691666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.45,
+              "threshold": -302.17623915081043,
+              "in_space_acceptance": 0.5086206896551724,
+              "rejection": {
+                "beans": 0.6516666666666666,
+                "fcdd_apple": 0.975,
+                "fcdd_other": 0.9708333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.46,
+              "threshold": -300.95900191038857,
+              "in_space_acceptance": 0.5,
+              "rejection": {
+                "beans": 0.6608333333333334,
+                "fcdd_apple": 0.975,
+                "fcdd_other": 0.9733333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.47,
+              "threshold": -299.469161697319,
+              "in_space_acceptance": 0.4956896551724138,
+              "rejection": {
+                "beans": 0.6733333333333333,
+                "fcdd_apple": 0.98,
+                "fcdd_other": 0.9766666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.48,
+              "threshold": -298.8271099119457,
+              "in_space_acceptance": 0.49137931034482757,
+              "rejection": {
+                "beans": 0.6775,
+                "fcdd_apple": 0.9825,
+                "fcdd_other": 0.9775
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.49,
+              "threshold": -298.1962334713015,
+              "in_space_acceptance": 0.4827586206896552,
+              "rejection": {
+                "beans": 0.685,
+                "fcdd_apple": 0.985,
+                "fcdd_other": 0.9791666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.5,
+              "threshold": -296.1966865191465,
+              "in_space_acceptance": 0.47844827586206895,
+              "rejection": {
+                "beans": 0.7016666666666667,
+                "fcdd_apple": 0.985,
+                "fcdd_other": 0.9816666666666667
+              },
+              "meets_h7": false
+            }
+          ],
+          "h7_feasible": true,
+          "best_operating_point": {
+            "q": 0.1,
+            "threshold": -401.56234775657595,
+            "in_space_acceptance": 0.9137931034482759,
+            "rejection": {
+              "beans": 0.051666666666666666,
+              "fcdd_apple": 0.535,
+              "fcdd_other": 0.53
+            },
+            "meets_h7": true
+          }
+        },
+        {
+          "seed": 3,
+          "n_tune": 232,
+          "n_eval": 232,
+          "n_ood": {
+            "beans": 1200,
+            "fcdd_apple": 400,
+            "fcdd_other": 1200
+          },
+          "operating_curve": [
+            {
+              "q": 0.01,
+              "threshold": -495.2714218980147,
+              "in_space_acceptance": 0.9870689655172413,
+              "rejection": {
+                "beans": 0.0016666666666666668,
+                "fcdd_apple": 0.1675,
+                "fcdd_other": 0.15833333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.02,
+              "threshold": -476.63412402292045,
+              "in_space_acceptance": 0.9827586206896551,
+              "rejection": {
+                "beans": 0.0016666666666666668,
+                "fcdd_apple": 0.23,
+                "fcdd_other": 0.22833333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.03,
+              "threshold": -451.5958783567884,
+              "in_space_acceptance": 0.9612068965517241,
+              "rejection": {
+                "beans": 0.005833333333333334,
+                "fcdd_apple": 0.3425,
+                "fcdd_other": 0.34833333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.04,
+              "threshold": -446.1180615323646,
+              "in_space_acceptance": 0.9568965517241379,
+              "rejection": {
+                "beans": 0.009166666666666667,
+                "fcdd_apple": 0.37,
+                "fcdd_other": 0.37583333333333335
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.05,
+              "threshold": -435.06087861057296,
+              "in_space_acceptance": 0.9482758620689655,
+              "rejection": {
+                "beans": 0.011666666666666667,
+                "fcdd_apple": 0.4375,
+                "fcdd_other": 0.44916666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.06,
+              "threshold": -433.68447241189926,
+              "in_space_acceptance": 0.9439655172413793,
+              "rejection": {
+                "beans": 0.011666666666666667,
+                "fcdd_apple": 0.44,
+                "fcdd_other": 0.46
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.07,
+              "threshold": -425.9782015222234,
+              "in_space_acceptance": 0.9310344827586207,
+              "rejection": {
+                "beans": 0.021666666666666667,
+                "fcdd_apple": 0.475,
+                "fcdd_other": 0.5116666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.08,
+              "threshold": -417.5070451840502,
+              "in_space_acceptance": 0.9224137931034483,
+              "rejection": {
+                "beans": 0.0275,
+                "fcdd_apple": 0.5425,
+                "fcdd_other": 0.5533333333333333
+              },
+              "meets_h7": true
+            },
+            {
+              "q": 0.09,
+              "threshold": -414.56773169488196,
+              "in_space_acceptance": 0.9181034482758621,
+              "rejection": {
+                "beans": 0.030833333333333334,
+                "fcdd_apple": 0.555,
+                "fcdd_other": 0.5691666666666667
+              },
+              "meets_h7": true
+            },
+            {
+              "q": 0.1,
+              "threshold": -410.60618816932424,
+              "in_space_acceptance": 0.9137931034482759,
+              "rejection": {
+                "beans": 0.034166666666666665,
+                "fcdd_apple": 0.585,
+                "fcdd_other": 0.5908333333333333
+              },
+              "meets_h7": true
+            },
+            {
+              "q": 0.11,
+              "threshold": -407.0551143464007,
+              "in_space_acceptance": 0.9137931034482759,
+              "rejection": {
+                "beans": 0.04,
+                "fcdd_apple": 0.6025,
+                "fcdd_other": 0.62
+              },
+              "meets_h7": true
+            },
+            {
+              "q": 0.12,
+              "threshold": -400.84307493956777,
+              "in_space_acceptance": 0.9094827586206896,
+              "rejection": {
+                "beans": 0.05416666666666667,
+                "fcdd_apple": 0.645,
+                "fcdd_other": 0.6666666666666666
+              },
+              "meets_h7": true
+            },
+            {
+              "q": 0.13,
+              "threshold": -392.73061173488986,
+              "in_space_acceptance": 0.8922413793103449,
+              "rejection": {
+                "beans": 0.07333333333333333,
+                "fcdd_apple": 0.6825,
+                "fcdd_other": 0.7075
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.14,
+              "threshold": -390.7710638377728,
+              "in_space_acceptance": 0.8793103448275862,
+              "rejection": {
+                "beans": 0.075,
+                "fcdd_apple": 0.7,
+                "fcdd_other": 0.7241666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.15,
+              "threshold": -384.8248555826461,
+              "in_space_acceptance": 0.8793103448275862,
+              "rejection": {
+                "beans": 0.0975,
+                "fcdd_apple": 0.7475,
+                "fcdd_other": 0.7591666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.16,
+              "threshold": -380.7489940892304,
+              "in_space_acceptance": 0.8706896551724138,
+              "rejection": {
+                "beans": 0.115,
+                "fcdd_apple": 0.755,
+                "fcdd_other": 0.7775
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.17,
+              "threshold": -378.4179889479535,
+              "in_space_acceptance": 0.8706896551724138,
+              "rejection": {
+                "beans": 0.12416666666666666,
+                "fcdd_apple": 0.7725,
+                "fcdd_other": 0.79
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.18,
+              "threshold": -373.4784454671555,
+              "in_space_acceptance": 0.8620689655172413,
+              "rejection": {
+                "beans": 0.14833333333333334,
+                "fcdd_apple": 0.7925,
+                "fcdd_other": 0.81
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.19,
+              "threshold": -370.5849347946528,
+              "in_space_acceptance": 0.8491379310344828,
+              "rejection": {
+                "beans": 0.16333333333333333,
+                "fcdd_apple": 0.805,
+                "fcdd_other": 0.8233333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.2,
+              "threshold": -369.2325947169228,
+              "in_space_acceptance": 0.8405172413793104,
+              "rejection": {
+                "beans": 0.16833333333333333,
+                "fcdd_apple": 0.8175,
+                "fcdd_other": 0.8258333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.21,
+              "threshold": -368.1129159915522,
+              "in_space_acceptance": 0.8362068965517241,
+              "rejection": {
+                "beans": 0.175,
+                "fcdd_apple": 0.8275,
+                "fcdd_other": 0.8358333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.22,
+              "threshold": -366.0932157282672,
+              "in_space_acceptance": 0.8275862068965517,
+              "rejection": {
+                "beans": 0.18333333333333332,
+                "fcdd_apple": 0.8375,
+                "fcdd_other": 0.8383333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.23,
+              "threshold": -363.86746015221007,
+              "in_space_acceptance": 0.8275862068965517,
+              "rejection": {
+                "beans": 0.19333333333333333,
+                "fcdd_apple": 0.85,
+                "fcdd_other": 0.8475
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.24,
+              "threshold": -361.2796396120284,
+              "in_space_acceptance": 0.8103448275862069,
+              "rejection": {
+                "beans": 0.21,
+                "fcdd_apple": 0.8675,
+                "fcdd_other": 0.8608333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.25,
+              "threshold": -357.28412785593605,
+              "in_space_acceptance": 0.7974137931034483,
+              "rejection": {
+                "beans": 0.2275,
+                "fcdd_apple": 0.88,
+                "fcdd_other": 0.8825
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.26,
+              "threshold": -355.5870758129412,
+              "in_space_acceptance": 0.7844827586206896,
+              "rejection": {
+                "beans": 0.23666666666666666,
+                "fcdd_apple": 0.8825,
+                "fcdd_other": 0.8891666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.27,
+              "threshold": -354.2646208944355,
+              "in_space_acceptance": 0.7844827586206896,
+              "rejection": {
+                "beans": 0.24666666666666667,
+                "fcdd_apple": 0.8825,
+                "fcdd_other": 0.8966666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.28,
+              "threshold": -353.08610979862004,
+              "in_space_acceptance": 0.7844827586206896,
+              "rejection": {
+                "beans": 0.25,
+                "fcdd_apple": 0.8825,
+                "fcdd_other": 0.9025
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.29,
+              "threshold": -351.4822801317366,
+              "in_space_acceptance": 0.7801724137931034,
+              "rejection": {
+                "beans": 0.25583333333333336,
+                "fcdd_apple": 0.8825,
+                "fcdd_other": 0.9041666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.3,
+              "threshold": -349.0069610177915,
+              "in_space_acceptance": 0.7801724137931034,
+              "rejection": {
+                "beans": 0.26916666666666667,
+                "fcdd_apple": 0.895,
+                "fcdd_other": 0.9166666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.31,
+              "threshold": -346.6581658870547,
+              "in_space_acceptance": 0.7672413793103449,
+              "rejection": {
+                "beans": 0.2891666666666667,
+                "fcdd_apple": 0.8975,
+                "fcdd_other": 0.9225
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.32,
+              "threshold": -344.4395671515211,
+              "in_space_acceptance": 0.7586206896551724,
+              "rejection": {
+                "beans": 0.30916666666666665,
+                "fcdd_apple": 0.9075,
+                "fcdd_other": 0.9266666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.33,
+              "threshold": -341.41266030259965,
+              "in_space_acceptance": 0.7543103448275862,
+              "rejection": {
+                "beans": 0.3283333333333333,
+                "fcdd_apple": 0.9225,
+                "fcdd_other": 0.9341666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.34,
+              "threshold": -340.47651561547093,
+              "in_space_acceptance": 0.75,
+              "rejection": {
+                "beans": 0.3375,
+                "fcdd_apple": 0.925,
+                "fcdd_other": 0.9375
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.35,
+              "threshold": -339.50167798250845,
+              "in_space_acceptance": 0.75,
+              "rejection": {
+                "beans": 0.3458333333333333,
+                "fcdd_apple": 0.9275,
+                "fcdd_other": 0.9441666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.36,
+              "threshold": -337.9191208809107,
+              "in_space_acceptance": 0.7370689655172413,
+              "rejection": {
+                "beans": 0.3541666666666667,
+                "fcdd_apple": 0.9325,
+                "fcdd_other": 0.9458333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.37,
+              "threshold": -335.64706663920134,
+              "in_space_acceptance": 0.7241379310344828,
+              "rejection": {
+                "beans": 0.37916666666666665,
+                "fcdd_apple": 0.935,
+                "fcdd_other": 0.9516666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.38,
+              "threshold": -334.2526418421288,
+              "in_space_acceptance": 0.7112068965517241,
+              "rejection": {
+                "beans": 0.3933333333333333,
+                "fcdd_apple": 0.9375,
+                "fcdd_other": 0.9566666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.39,
+              "threshold": -333.1121253922863,
+              "in_space_acceptance": 0.6982758620689655,
+              "rejection": {
+                "beans": 0.4033333333333333,
+                "fcdd_apple": 0.9375,
+                "fcdd_other": 0.9566666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.4,
+              "threshold": -331.7278028599011,
+              "in_space_acceptance": 0.6939655172413793,
+              "rejection": {
+                "beans": 0.41583333333333333,
+                "fcdd_apple": 0.945,
+                "fcdd_other": 0.9625
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.41,
+              "threshold": -330.22666208506644,
+              "in_space_acceptance": 0.6810344827586207,
+              "rejection": {
+                "beans": 0.42833333333333334,
+                "fcdd_apple": 0.9475,
+                "fcdd_other": 0.9675
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.42,
+              "threshold": -327.71891429293663,
+              "in_space_acceptance": 0.6637931034482759,
+              "rejection": {
+                "beans": 0.45166666666666666,
+                "fcdd_apple": 0.955,
+                "fcdd_other": 0.9708333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.43,
+              "threshold": -322.79200739045154,
+              "in_space_acceptance": 0.6206896551724138,
+              "rejection": {
+                "beans": 0.49083333333333334,
+                "fcdd_apple": 0.9675,
+                "fcdd_other": 0.98
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.44,
+              "threshold": -320.1368328253015,
+              "in_space_acceptance": 0.5948275862068966,
+              "rejection": {
+                "beans": 0.515,
+                "fcdd_apple": 0.9675,
+                "fcdd_other": 0.9825
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.45,
+              "threshold": -318.0005633658294,
+              "in_space_acceptance": 0.5948275862068966,
+              "rejection": {
+                "beans": 0.5325,
+                "fcdd_apple": 0.97,
+                "fcdd_other": 0.9841666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.46,
+              "threshold": -316.7110098195761,
+              "in_space_acceptance": 0.5818965517241379,
+              "rejection": {
+                "beans": 0.5441666666666667,
+                "fcdd_apple": 0.975,
+                "fcdd_other": 0.9858333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.47,
+              "threshold": -311.7323150937091,
+              "in_space_acceptance": 0.5560344827586207,
+              "rejection": {
+                "beans": 0.5808333333333333,
+                "fcdd_apple": 0.9825,
+                "fcdd_other": 0.9916666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.48,
+              "threshold": -309.53250826368367,
+              "in_space_acceptance": 0.521551724137931,
+              "rejection": {
+                "beans": 0.5941666666666666,
+                "fcdd_apple": 0.985,
+                "fcdd_other": 0.9916666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.49,
+              "threshold": -307.72515007563237,
+              "in_space_acceptance": 0.5086206896551724,
+              "rejection": {
+                "beans": 0.6058333333333333,
+                "fcdd_apple": 0.9875,
+                "fcdd_other": 0.9933333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.5,
+              "threshold": -302.35333321959934,
+              "in_space_acceptance": 0.4956896551724138,
+              "rejection": {
+                "beans": 0.6541666666666667,
+                "fcdd_apple": 0.995,
+                "fcdd_other": 0.9941666666666666
+              },
+              "meets_h7": false
+            }
+          ],
+          "h7_feasible": true,
+          "best_operating_point": {
+            "q": 0.12,
+            "threshold": -400.84307493956777,
+            "in_space_acceptance": 0.9094827586206896,
+            "rejection": {
+              "beans": 0.05416666666666667,
+              "fcdd_apple": 0.645,
+              "fcdd_other": 0.6666666666666666
+            },
+            "meets_h7": true
+          }
+        },
+        {
+          "seed": 42,
+          "n_tune": 232,
+          "n_eval": 232,
+          "n_ood": {
+            "beans": 1200,
+            "fcdd_apple": 400,
+            "fcdd_other": 1200
+          },
+          "operating_curve": [
+            {
+              "q": 0.01,
+              "threshold": -484.04262090906957,
+              "in_space_acceptance": 0.978448275862069,
+              "rejection": {
+                "beans": 0.0008333333333333334,
+                "fcdd_apple": 0.1625,
+                "fcdd_other": 0.13666666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.02,
+              "threshold": -457.6624168310036,
+              "in_space_acceptance": 0.9698275862068966,
+              "rejection": {
+                "beans": 0.005833333333333334,
+                "fcdd_apple": 0.23,
+                "fcdd_other": 0.24666666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.03,
+              "threshold": -451.52255593678035,
+              "in_space_acceptance": 0.9698275862068966,
+              "rejection": {
+                "beans": 0.0075,
+                "fcdd_apple": 0.25,
+                "fcdd_other": 0.27666666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.04,
+              "threshold": -429.36457391513585,
+              "in_space_acceptance": 0.9525862068965517,
+              "rejection": {
+                "beans": 0.02,
+                "fcdd_apple": 0.3475,
+                "fcdd_other": 0.3908333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.05,
+              "threshold": -424.3169811280583,
+              "in_space_acceptance": 0.9396551724137931,
+              "rejection": {
+                "beans": 0.025,
+                "fcdd_apple": 0.3825,
+                "fcdd_other": 0.41833333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.06,
+              "threshold": -415.0219735883346,
+              "in_space_acceptance": 0.9224137931034483,
+              "rejection": {
+                "beans": 0.034166666666666665,
+                "fcdd_apple": 0.4525,
+                "fcdd_other": 0.475
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.07,
+              "threshold": -409.09972278730504,
+              "in_space_acceptance": 0.9094827586206896,
+              "rejection": {
+                "beans": 0.041666666666666664,
+                "fcdd_apple": 0.4775,
+                "fcdd_other": 0.5125
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.08,
+              "threshold": -396.7940597897578,
+              "in_space_acceptance": 0.8706896551724138,
+              "rejection": {
+                "beans": 0.065,
+                "fcdd_apple": 0.5475,
+                "fcdd_other": 0.5841666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.09,
+              "threshold": -390.29231571073854,
+              "in_space_acceptance": 0.8620689655172413,
+              "rejection": {
+                "beans": 0.08166666666666667,
+                "fcdd_apple": 0.5925,
+                "fcdd_other": 0.625
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.1,
+              "threshold": -388.5997172469683,
+              "in_space_acceptance": 0.8620689655172413,
+              "rejection": {
+                "beans": 0.08583333333333333,
+                "fcdd_apple": 0.605,
+                "fcdd_other": 0.6308333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.11,
+              "threshold": -382.5297279720097,
+              "in_space_acceptance": 0.8275862068965517,
+              "rejection": {
+                "beans": 0.11,
+                "fcdd_apple": 0.6425,
+                "fcdd_other": 0.6658333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.12,
+              "threshold": -376.5735821822659,
+              "in_space_acceptance": 0.8103448275862069,
+              "rejection": {
+                "beans": 0.1225,
+                "fcdd_apple": 0.6725,
+                "fcdd_other": 0.7
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.13,
+              "threshold": -368.5902017492986,
+              "in_space_acceptance": 0.7974137931034483,
+              "rejection": {
+                "beans": 0.16,
+                "fcdd_apple": 0.7225,
+                "fcdd_other": 0.7391666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.14,
+              "threshold": -366.59562439446233,
+              "in_space_acceptance": 0.7844827586206896,
+              "rejection": {
+                "beans": 0.16833333333333333,
+                "fcdd_apple": 0.74,
+                "fcdd_other": 0.75
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.15,
+              "threshold": -363.0949101157397,
+              "in_space_acceptance": 0.7672413793103449,
+              "rejection": {
+                "beans": 0.18666666666666668,
+                "fcdd_apple": 0.76,
+                "fcdd_other": 0.7675
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.16,
+              "threshold": -361.89099911560845,
+              "in_space_acceptance": 0.7629310344827587,
+              "rejection": {
+                "beans": 0.19583333333333333,
+                "fcdd_apple": 0.7625,
+                "fcdd_other": 0.7716666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.17,
+              "threshold": -359.2397271200378,
+              "in_space_acceptance": 0.7586206896551724,
+              "rejection": {
+                "beans": 0.21666666666666667,
+                "fcdd_apple": 0.775,
+                "fcdd_other": 0.7841666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.18,
+              "threshold": -356.13245952051085,
+              "in_space_acceptance": 0.7456896551724138,
+              "rejection": {
+                "beans": 0.235,
+                "fcdd_apple": 0.8025,
+                "fcdd_other": 0.7983333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.19,
+              "threshold": -353.54367508312566,
+              "in_space_acceptance": 0.7241379310344828,
+              "rejection": {
+                "beans": 0.25,
+                "fcdd_apple": 0.8175,
+                "fcdd_other": 0.8108333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.2,
+              "threshold": -351.643227180856,
+              "in_space_acceptance": 0.7155172413793104,
+              "rejection": {
+                "beans": 0.2633333333333333,
+                "fcdd_apple": 0.8275,
+                "fcdd_other": 0.8216666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.21,
+              "threshold": -349.2073596064995,
+              "in_space_acceptance": 0.7068965517241379,
+              "rejection": {
+                "beans": 0.28583333333333333,
+                "fcdd_apple": 0.85,
+                "fcdd_other": 0.8366666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.22,
+              "threshold": -348.22631713429394,
+              "in_space_acceptance": 0.6896551724137931,
+              "rejection": {
+                "beans": 0.29083333333333333,
+                "fcdd_apple": 0.85,
+                "fcdd_other": 0.8416666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.23,
+              "threshold": -346.2754257919137,
+              "in_space_acceptance": 0.6767241379310345,
+              "rejection": {
+                "beans": 0.3075,
+                "fcdd_apple": 0.8525,
+                "fcdd_other": 0.8466666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.24,
+              "threshold": -342.3689887706505,
+              "in_space_acceptance": 0.6637931034482759,
+              "rejection": {
+                "beans": 0.3358333333333333,
+                "fcdd_apple": 0.87,
+                "fcdd_other": 0.8608333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.25,
+              "threshold": -339.82256769936504,
+              "in_space_acceptance": 0.6293103448275862,
+              "rejection": {
+                "beans": 0.35583333333333333,
+                "fcdd_apple": 0.89,
+                "fcdd_other": 0.8716666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.26,
+              "threshold": -338.7233970099189,
+              "in_space_acceptance": 0.625,
+              "rejection": {
+                "beans": 0.37,
+                "fcdd_apple": 0.895,
+                "fcdd_other": 0.8775
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.27,
+              "threshold": -336.9352354157612,
+              "in_space_acceptance": 0.6163793103448276,
+              "rejection": {
+                "beans": 0.38333333333333336,
+                "fcdd_apple": 0.905,
+                "fcdd_other": 0.8875
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.28,
+              "threshold": -336.5184471667254,
+              "in_space_acceptance": 0.6163793103448276,
+              "rejection": {
+                "beans": 0.385,
+                "fcdd_apple": 0.905,
+                "fcdd_other": 0.8908333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.29,
+              "threshold": -335.1821695196553,
+              "in_space_acceptance": 0.6077586206896551,
+              "rejection": {
+                "beans": 0.3933333333333333,
+                "fcdd_apple": 0.9125,
+                "fcdd_other": 0.895
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.3,
+              "threshold": -333.51157957531154,
+              "in_space_acceptance": 0.5948275862068966,
+              "rejection": {
+                "beans": 0.4091666666666667,
+                "fcdd_apple": 0.915,
+                "fcdd_other": 0.8991666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.31,
+              "threshold": -328.8746529203252,
+              "in_space_acceptance": 0.5732758620689655,
+              "rejection": {
+                "beans": 0.4508333333333333,
+                "fcdd_apple": 0.935,
+                "fcdd_other": 0.9125
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.32,
+              "threshold": -327.21059844358274,
+              "in_space_acceptance": 0.5689655172413793,
+              "rejection": {
+                "beans": 0.46166666666666667,
+                "fcdd_apple": 0.9375,
+                "fcdd_other": 0.9158333333333334
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.33,
+              "threshold": -326.414046082771,
+              "in_space_acceptance": 0.5603448275862069,
+              "rejection": {
+                "beans": 0.4683333333333333,
+                "fcdd_apple": 0.9375,
+                "fcdd_other": 0.9191666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.34,
+              "threshold": -325.594980731719,
+              "in_space_acceptance": 0.5603448275862069,
+              "rejection": {
+                "beans": 0.4775,
+                "fcdd_apple": 0.9375,
+                "fcdd_other": 0.9208333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.35,
+              "threshold": -322.93758027867034,
+              "in_space_acceptance": 0.5387931034482759,
+              "rejection": {
+                "beans": 0.49833333333333335,
+                "fcdd_apple": 0.9425,
+                "fcdd_other": 0.925
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.36,
+              "threshold": -322.67027391833903,
+              "in_space_acceptance": 0.5387931034482759,
+              "rejection": {
+                "beans": 0.5008333333333334,
+                "fcdd_apple": 0.9425,
+                "fcdd_other": 0.9258333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.37,
+              "threshold": -322.22895889115495,
+              "in_space_acceptance": 0.5344827586206896,
+              "rejection": {
+                "beans": 0.505,
+                "fcdd_apple": 0.945,
+                "fcdd_other": 0.9266666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.38,
+              "threshold": -320.6328621435617,
+              "in_space_acceptance": 0.5301724137931034,
+              "rejection": {
+                "beans": 0.5241666666666667,
+                "fcdd_apple": 0.9525,
+                "fcdd_other": 0.93
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.39,
+              "threshold": -317.80699939192476,
+              "in_space_acceptance": 0.5043103448275862,
+              "rejection": {
+                "beans": 0.5533333333333333,
+                "fcdd_apple": 0.9575,
+                "fcdd_other": 0.935
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.4,
+              "threshold": -315.8639869240285,
+              "in_space_acceptance": 0.4956896551724138,
+              "rejection": {
+                "beans": 0.5675,
+                "fcdd_apple": 0.9575,
+                "fcdd_other": 0.9416666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.41,
+              "threshold": -314.42102941095203,
+              "in_space_acceptance": 0.4956896551724138,
+              "rejection": {
+                "beans": 0.5808333333333333,
+                "fcdd_apple": 0.9575,
+                "fcdd_other": 0.945
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.42,
+              "threshold": -312.62679546580773,
+              "in_space_acceptance": 0.4870689655172414,
+              "rejection": {
+                "beans": 0.6008333333333333,
+                "fcdd_apple": 0.9625,
+                "fcdd_other": 0.9516666666666667
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.43,
+              "threshold": -310.4203102917669,
+              "in_space_acceptance": 0.47844827586206895,
+              "rejection": {
+                "beans": 0.6241666666666666,
+                "fcdd_apple": 0.97,
+                "fcdd_other": 0.9591666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.44,
+              "threshold": -309.354722899508,
+              "in_space_acceptance": 0.46551724137931033,
+              "rejection": {
+                "beans": 0.6358333333333334,
+                "fcdd_apple": 0.97,
+                "fcdd_other": 0.96
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.45,
+              "threshold": -307.28997619577484,
+              "in_space_acceptance": 0.4396551724137931,
+              "rejection": {
+                "beans": 0.6558333333333334,
+                "fcdd_apple": 0.97,
+                "fcdd_other": 0.9625
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.46,
+              "threshold": -306.3052968049869,
+              "in_space_acceptance": 0.4353448275862069,
+              "rejection": {
+                "beans": 0.6641666666666667,
+                "fcdd_apple": 0.9725,
+                "fcdd_other": 0.9641666666666666
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.47,
+              "threshold": -303.91021179977326,
+              "in_space_acceptance": 0.4353448275862069,
+              "rejection": {
+                "beans": 0.6816666666666666,
+                "fcdd_apple": 0.98,
+                "fcdd_other": 0.9675
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.48,
+              "threshold": -301.79399622046515,
+              "in_space_acceptance": 0.4267241379310345,
+              "rejection": {
+                "beans": 0.6966666666666667,
+                "fcdd_apple": 0.985,
+                "fcdd_other": 0.9708333333333333
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.49,
+              "threshold": -300.8021405338859,
+              "in_space_acceptance": 0.4267241379310345,
+              "rejection": {
+                "beans": 0.7066666666666667,
+                "fcdd_apple": 0.985,
+                "fcdd_other": 0.9725
+              },
+              "meets_h7": false
+            },
+            {
+              "q": 0.5,
+              "threshold": -299.4324211085968,
+              "in_space_acceptance": 0.41810344827586204,
+              "rejection": {
+                "beans": 0.7191666666666666,
+                "fcdd_apple": 0.9875,
+                "fcdd_other": 0.9733333333333334
+              },
+              "meets_h7": false
+            }
+          ],
+          "h7_feasible": false,
+          "best_operating_point": null
+        }
+      ]
+    }
+  },
+  "h7_supported": false,
+  "meta": {
+    "command": "scripts/s4_membership_threshold.py",
+    "timestamp_utc": "2026-08-17T11:28:53.733061+00:00",
+    "git": {
+      "edge-reliability-gate": "c3cd00158c59fac70a0251ade336a94db62ad81f"
+    },
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      42
+    ],
+    "wall_s": 910.3,
+    "environment": {
+      "hostname": "nkolesnikov-ubuntu",
+      "machine": "x86_64",
+      "python": "3.13.7",
+      "numpy": "2.5.2"
+    }
+  }
+}

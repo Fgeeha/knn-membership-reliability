@@ -1,0 +1,35 @@
+{
+  "dataset": "beans (AI Lab Makerere, 1295 field leaf images, 3 classes)",
+  "question": "can beans serve as a correctness-bearing third query domain?",
+  "canonical_crops": [
+    "apple",
+    "bell",
+    "blueberry",
+    "corn",
+    "grape",
+    "peach",
+    "potato",
+    "raspberry",
+    "soyabean",
+    "squash",
+    "tomato"
+  ],
+  "rows": [
+    {
+      "external": "bean/angular leaf spot",
+      "matches": [],
+      "verdict": "OOD_UNSEEN_CROP"
+    },
+    {
+      "external": "bean/rust",
+      "matches": [],
+      "verdict": "OOD_UNSEEN_CROP"
+    },
+    {
+      "external": "bean/healthy",
+      "matches": [],
+      "verdict": "OOD_UNSEEN_CROP"
+    }
+  ],
+  "conclusion": "no beans crop in the 23-class canonical space; all three labels are OOD_UNSEEN_CROP; top-1 correctness against any gallery in this space is undefined for beans queries; beans remains usable only as the near-OOD membership tier already used in S3-ood"
+}

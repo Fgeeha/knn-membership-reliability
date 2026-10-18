@@ -1,0 +1,43 @@
+{
+  "signal": "class_gap",
+  "setting": {
+    "n_gallery": 1853,
+    "n_classes": 23,
+    "k": 100,
+    "runs": 1000,
+    "warmup": 100,
+    "seed": 42,
+    "note": "marginal cost only; the kNN distance vector is taken as given"
+  },
+  "latency_ms": {
+    "p50": 1.3901519996579736,
+    "p90": 1.4084183960221708,
+    "p95": 1.469760699546896,
+    "p99": 1.622158649261109,
+    "mean": 1.4032079302414786,
+    "std": 0.054479752153447275,
+    "min": 1.3800960150547326,
+    "max": 2.126811014022678
+  },
+  "memory_bytes": {
+    "gallery_statistics": 1932,
+    "note": "mu, sigma and a 19-quantile grid per class, float32"
+  },
+  "budget_check": {
+    "deploy_mb_reference": 2.924,
+    "e2e_p50_ms_reference": 103.32,
+    "added_size_fraction": 0.0006607387140902872,
+    "added_latency_fraction_p50": 0.013454819973460838,
+    "within_10pct_size": true,
+    "within_10pct_latency": true
+  },
+  "environment": {
+    "hostname": "raspberrypi",
+    "platform": "Linux-6.12.96+rpt-rpi-v8-aarch64-with-glibc2.36",
+    "machine": "aarch64",
+    "processor": "",
+    "python": "3.11.2",
+    "numpy": "2.4.6"
+  },
+  "timestamp_utc": "2026-08-16T12:40:37.076960+00:00"
+}

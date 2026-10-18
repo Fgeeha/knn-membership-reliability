@@ -1,0 +1,271 @@
+{
+  "hypothesis": "H8 (S4_PREREGISTRATION.md)",
+  "signal": "neg_d1",
+  "fset": "onnx_fp32",
+  "backbone": "c6",
+  "compressed_gallery": false,
+  "k": 10,
+  "n_boot": 10000,
+  "rows": [
+    {
+      "query_domain": "plantdoc",
+      "gallery": "plantvillage(mismatched)",
+      "per_class": 200,
+      "expected_side": "below 0.5",
+      "seeds_ci_on_expected_side": "4/5",
+      "h8_cell": true,
+      "per_seed": [
+        {
+          "seed": 0,
+          "n_eval": 152,
+          "auroc": 0.3927083333333333,
+          "ci95": [
+            0.28387422916730404,
+            0.5078518518518519
+          ],
+          "ci_on_expected_side": false
+        },
+        {
+          "seed": 1,
+          "n_eval": 152,
+          "auroc": 0.37763409961685823,
+          "ci95": [
+            0.2781632375600471,
+            0.4814210622057483
+          ],
+          "ci_on_expected_side": true
+        },
+        {
+          "seed": 2,
+          "n_eval": 152,
+          "auroc": 0.3609172482552343,
+          "ci95": [
+            0.2656938374937647,
+            0.4612575159857768
+          ],
+          "ci_on_expected_side": true
+        },
+        {
+          "seed": 3,
+          "n_eval": 152,
+          "auroc": 0.3712557603686636,
+          "ci95": [
+            0.2607417152347035,
+            0.4859273840769904
+          ],
+          "ci_on_expected_side": true
+        },
+        {
+          "seed": 42,
+          "n_eval": 152,
+          "auroc": 0.2582123758594347,
+          "ci95": [
+            0.16627980437709608,
+            0.35655737704918034
+          ],
+          "ci_on_expected_side": true
+        }
+      ]
+    },
+    {
+      "query_domain": "plantdoc",
+      "gallery": "plantvillage(mismatched)",
+      "per_class": 373,
+      "expected_side": "below 0.5",
+      "seeds_ci_on_expected_side": "4/5",
+      "h8_cell": true,
+      "per_seed": [
+        {
+          "seed": 0,
+          "n_eval": 152,
+          "auroc": 0.401296111665005,
+          "ci95": [
+            0.29556957060500344,
+            0.5080730789762234
+          ],
+          "ci_on_expected_side": false
+        },
+        {
+          "seed": 1,
+          "n_eval": 152,
+          "auroc": 0.3453596550941684,
+          "ci95": [
+            0.25371975019516,
+            0.4425570700354609
+          ],
+          "ci_on_expected_side": true
+        },
+        {
+          "seed": 2,
+          "n_eval": 152,
+          "auroc": 0.37257617728531855,
+          "ci95": [
+            0.2750190465442938,
+            0.4693307188093193
+          ],
+          "ci_on_expected_side": true
+        },
+        {
+          "seed": 3,
+          "n_eval": 152,
+          "auroc": 0.3619047619047619,
+          "ci95": [
+            0.2613327793167128,
+            0.4677091733870968
+          ],
+          "ci_on_expected_side": true
+        },
+        {
+          "seed": 42,
+          "n_eval": 152,
+          "auroc": 0.3715304303539598,
+          "ci95": [
+            0.2688610656205964,
+            0.47950952470457475
+          ],
+          "ci_on_expected_side": true
+        }
+      ]
+    },
+    {
+      "query_domain": "plantwild",
+      "gallery": "plantvillage(mismatched)",
+      "per_class": 200,
+      "expected_side": "above 0.5",
+      "seeds_ci_on_expected_side": "1/5",
+      "h8_cell": false,
+      "per_seed": [
+        {
+          "seed": 0,
+          "n_eval": 177,
+          "auroc": 0.6051094890510949,
+          "ci95": [
+            0.5120161308725139,
+            0.6960511463844797
+          ],
+          "ci_on_expected_side": true
+        },
+        {
+          "seed": 1,
+          "n_eval": 177,
+          "auroc": 0.46021897810218976,
+          "ci95": [
+            0.36091245704444286,
+            0.5574981861938384
+          ],
+          "ci_on_expected_side": false
+        },
+        {
+          "seed": 2,
+          "n_eval": 177,
+          "auroc": 0.49444045911047346,
+          "ci95": [
+            0.39868843922035413,
+            0.5870565241406327
+          ],
+          "ci_on_expected_side": false
+        },
+        {
+          "seed": 3,
+          "n_eval": 177,
+          "auroc": 0.5062043795620438,
+          "ci95": [
+            0.40100200677564957,
+            0.6114568088858868
+          ],
+          "ci_on_expected_side": false
+        },
+        {
+          "seed": 42,
+          "n_eval": 177,
+          "auroc": 0.5563011456628478,
+          "ci95": [
+            0.4593618767542985,
+            0.6546341621029
+          ],
+          "ci_on_expected_side": false
+        }
+      ]
+    },
+    {
+      "query_domain": "plantwild",
+      "gallery": "plantvillage(mismatched)",
+      "per_class": 373,
+      "expected_side": "above 0.5",
+      "seeds_ci_on_expected_side": "2/5",
+      "h8_cell": false,
+      "per_seed": [
+        {
+          "seed": 0,
+          "n_eval": 177,
+          "auroc": 0.6475384615384615,
+          "ci95": [
+            0.5621344166200626,
+            0.7279225209278313
+          ],
+          "ci_on_expected_side": true
+        },
+        {
+          "seed": 1,
+          "n_eval": 177,
+          "auroc": 0.49266409266409267,
+          "ci95": [
+            0.3864192185053112,
+            0.5982628448253448
+          ],
+          "ci_on_expected_side": false
+        },
+        {
+          "seed": 2,
+          "n_eval": 177,
+          "auroc": 0.6122693096377307,
+          "ci95": [
+            0.5170361093530502,
+            0.7021539961013645
+          ],
+          "ci_on_expected_side": true
+        },
+        {
+          "seed": 3,
+          "n_eval": 177,
+          "auroc": 0.5740674318507891,
+          "ci95": [
+            0.47763123953397224,
+            0.6713877877613342
+          ],
+          "ci_on_expected_side": false
+        },
+        {
+          "seed": 42,
+          "n_eval": 177,
+          "auroc": 0.5499502157318288,
+          "ci95": [
+            0.45041962835737576,
+            0.6543745426098367
+          ],
+          "ci_on_expected_side": false
+        }
+      ]
+    }
+  ],
+  "h8_supported": false,
+  "meta": {
+    "command": "scripts/s4_paired_bootstrap.py",
+    "timestamp_utc": "2026-08-17T11:26:05.859750+00:00",
+    "git": {
+      "edge-reliability-gate": "65eaeab72900a9ec9c7b6be51dc23b80933dba2a"
+    },
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      42
+    ],
+    "wall_s": 50.8,
+    "environment": {
+      "python": "3.13.7",
+      "numpy": "2.5.2"
+    }
+  }
+}

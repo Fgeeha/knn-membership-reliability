@@ -1,0 +1,103 @@
+classes 13  queries: plantdoc 304, plantwild 353  features onnx_fp32  gallery float32
+
+queries    gallery                    N/cls      N     acc   neg_d1(und)  inverted  class_gap
+plantdoc   own(matched)                  35    455  0.4447    0.540±0.045     False      0.821
+plantdoc   plantvillage(mismatched)      35    455  0.2487    0.388±0.030      True      0.701
+plantdoc   plantvillage(mismatched)      60    780  0.2329    0.384±0.048      True      0.692
+plantdoc   plantvillage(mismatched)     100   1300  0.2553    0.362±0.010      True      0.676
+plantdoc   plantvillage(mismatched)     200   2600  0.2428    0.357±0.041      True      0.728
+plantdoc   plantvillage(mismatched)     373   4849  0.2493    0.375±0.026      True      0.716
+plantwild  own(matched)                  35    455  0.4533    0.546±0.027     False      0.756
+plantwild  plantvillage(mismatched)      35    455  0.2669    0.538±0.042     False      0.698
+plantwild  plantvillage(mismatched)      60    780  0.2748    0.473±0.048      True      0.673
+plantwild  plantvillage(mismatched)     100   1300  0.2731    0.532±0.051     False      0.678
+plantwild  plantvillage(mismatched)     200   2600  0.2669    0.510±0.065     False      0.703
+plantwild  plantvillage(mismatched)     373   4849  0.2878    0.502±0.057     False      0.667
+
+written -> results/s4_bridge_c4/bridge_onnx_fp32_f32.json  (7.0 s)
+classes 13  queries: plantdoc 304, plantwild 353  features onnx_fp32  gallery PolarQuant-3bit
+
+queries    gallery                    N/cls      N     acc   neg_d1(und)  inverted  class_gap
+plantdoc   own(matched)                  35    455  0.4230    0.565±0.029     False      0.814
+plantdoc   plantvillage(mismatched)      35    455  0.2362    0.370±0.030      True      0.624
+plantdoc   plantvillage(mismatched)      60    780  0.2171    0.378±0.051      True      0.661
+plantdoc   plantvillage(mismatched)     100   1300  0.2408    0.332±0.032      True      0.679
+plantdoc   plantvillage(mismatched)     200   2600  0.2329    0.323±0.076      True      0.690
+plantdoc   plantvillage(mismatched)     373   4849  0.2382    0.344±0.030      True      0.748
+plantwild  own(matched)                  35    455  0.4397    0.525±0.026     False      0.740
+plantwild  plantvillage(mismatched)      35    455  0.2561    0.502±0.034     False      0.680
+plantwild  plantvillage(mismatched)      60    780  0.2674    0.447±0.044      True      0.681
+plantwild  plantvillage(mismatched)     100   1300  0.2748    0.506±0.061     False      0.674
+plantwild  plantvillage(mismatched)     200   2600  0.2782    0.481±0.037      True      0.690
+plantwild  plantvillage(mismatched)     373   4849  0.2754    0.494±0.056      True      0.690
+
+written -> results/s4_bridge_c4/bridge_onnx_fp32_pq.json  (19.6 s)
+classes 13  queries: plantdoc 304, plantwild 353  features onnx_int8  gallery PolarQuant-3bit
+
+queries    gallery                    N/cls      N     acc   neg_d1(und)  inverted  class_gap
+plantdoc   own(matched)                  35    455  0.4329    0.559±0.043     False      0.814
+plantdoc   plantvillage(mismatched)      35    455  0.2408    0.376±0.029      True      0.636
+plantdoc   plantvillage(mismatched)      60    780  0.2125    0.374±0.041      True      0.648
+plantdoc   plantvillage(mismatched)     100   1300  0.2447    0.329±0.026      True      0.624
+plantdoc   plantvillage(mismatched)     200   2600  0.2382    0.334±0.061      True      0.704
+plantdoc   plantvillage(mismatched)     373   4849  0.2401    0.334±0.023      True      0.706
+plantwild  own(matched)                  35    455  0.4380    0.506±0.021     False      0.744
+plantwild  plantvillage(mismatched)      35    455  0.2521    0.510±0.033     False      0.697
+plantwild  plantvillage(mismatched)      60    780  0.2691    0.458±0.038      True      0.677
+plantwild  plantvillage(mismatched)     100   1300  0.2799    0.522±0.063     False      0.660
+plantwild  plantvillage(mismatched)     200   2600  0.2799    0.471±0.051      True      0.699
+plantwild  plantvillage(mismatched)     373   4849  0.2941    0.478±0.054      True      0.674
+
+written -> results/s4_bridge_c4/bridge_onnx_int8_pq.json  (19.9 s)
+gallery plantwild @35/class, queries 353, OOD known-crop 2824, unseen-crop 6580
+
+signal                correctness   known-crop  unseen-crop
+class_gap                   0.740        0.545        0.549
+d1_over_dbar                0.500        0.648        0.708
+margin_rel                  0.616        0.566        0.568
+neg_d1                      0.496        0.637        0.716
+neg_local_density           0.523        0.617        0.705
+neg_vote_entropy            0.672        0.564        0.589
+rank_class                  0.581        0.666        0.691
+vote_share                  0.729        0.557        0.568
+z_class                     0.539        0.672        0.693
+z_times_vote                0.671        0.681        0.692
+
+complementarity: spearman(neg_d1,class_gap) = -0.005
+  class_gap beats neg_d1 on correctness by +0.244
+  neg_d1 beats class_gap on membership by +0.092 (worst tier)
+  criterion passes: False
+
+pre-declared policy: coverage 0.428, accuracy 0.633 vs baseline 0.458, OOD admitted 0.685
+
+written -> results/s4_two_loop_c4  (8.2 s)
+gallery plantvillage @35/class, queries 353, OOD known-crop 2824, unseen-crop 6580
+
+signal                correctness   known-crop  unseen-crop
+class_gap                   0.680        0.510        0.536
+d1_over_dbar                0.553        0.587        0.661
+margin_rel                  0.497        0.548        0.551
+neg_d1                      0.489        0.579        0.676
+neg_local_density           0.505        0.574        0.674
+neg_vote_entropy            0.679        0.505        0.578
+rank_class                  0.485        0.576        0.600
+vote_share                  0.694        0.511        0.553
+z_class                     0.525        0.612        0.644
+z_times_vote                0.553        0.585        0.584
+
+complementarity: spearman(neg_d1,class_gap) = +0.146
+  class_gap beats neg_d1 on correctness by +0.191
+  neg_d1 beats class_gap on membership by +0.069 (worst tier)
+  criterion passes: False
+
+pre-declared policy: coverage 0.447, accuracy 0.358 vs baseline 0.258, OOD admitted 0.752
+
+written -> results/s4_two_loop_c4  (7.9 s)
+  plantdoc @200: 0.349[0.248,0.455]  0.405[0.288,0.528]  0.388[0.290,0.491]  0.345[0.243,0.448]  0.299[0.198,0.405]  -> 4/5 on expected side
+  plantdoc @373: 0.391[0.278,0.509]  0.368[0.257,0.483]  0.361[0.266,0.458]  0.409[0.311,0.507]  0.343[0.233,0.459]  -> 3/5 on expected side
+ plantwild @200: 0.557[0.468,0.643]  0.522[0.423,0.622]  0.497[0.404,0.589]  0.570[0.475,0.664]  0.406[0.322,0.493]  -> 0/5 on expected side
+ plantwild @373: 0.507[0.417,0.594]  0.504[0.406,0.600]  0.507[0.413,0.600]  0.578[0.486,0.666]  0.416[0.327,0.510]  -> 0/5 on expected side
+
+H8 supported (c4): False
+written -> /home/nkolesnikov/aspirantura/code/edge-reliability-gate/results/s4_paired_bootstrap/paired_bootstrap_c4_onnx_fp32_f32.json  (14.7 s)
+ALL_C4_RUNS_DONE

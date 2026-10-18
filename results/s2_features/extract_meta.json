@@ -1,0 +1,102 @@
+{
+  "command": "scripts/s2_extract_features.py",
+  "timestamp_utc": "2026-08-16T12:15:55.862732+00:00",
+  "split_seed": 42,
+  "git": {
+    "edge-reliability-gate": "ed1d5906d400c63c8dc36d5c993ca609eee234f9",
+    "plantdiag-edge": "137600cccf78660847cbd3dd36d5d3b6326ec0a3"
+  },
+  "protocol": {
+    "source_root": "/home/nkolesnikov/Project/plant-disease-eccv2026/data/PlantVillage_raw/color",
+    "target_root": "/home/nkolesnikov/Project/plant-disease-eccv2026/data/PlantDoc_raw/train",
+    "labels_file": "configs/labels_clean.json",
+    "n_classes": 23,
+    "target_labels": [
+      "Apple_Scab_Leaf",
+      "Apple_leaf",
+      "Apple_rust_leaf",
+      "Bell_pepper_leaf",
+      "Bell_pepper_leaf_spot",
+      "Blueberry_leaf",
+      "Corn_Gray_leaf_spot",
+      "Corn_leaf_blight",
+      "Corn_rust_leaf",
+      "Peach_leaf",
+      "Potato_leaf_early_blight",
+      "Potato_leaf_late_blight",
+      "Raspberry_leaf",
+      "Soyabean_leaf",
+      "Squash_Powdery_mildew_leaf",
+      "Tomato_Early_blight_leaf",
+      "Tomato_leaf",
+      "Tomato_leaf_bacterial_spot",
+      "Tomato_leaf_late_blight",
+      "Tomato_leaf_mosaic_virus",
+      "Tomato_leaf_yellow_virus",
+      "Tomato_mold_leaf",
+      "grape_leaf"
+    ],
+    "counts": {
+      "src": 32605,
+      "tgt_tr": 1853,
+      "tgt_val": 464
+    }
+  },
+  "models": {
+    "onnx_fp32": "/home/nkolesnikov/aspirantura/code/plantdiag-edge/artifacts_pq/c6_mobilenet_v2_fp32.onnx",
+    "onnx_int8": "/home/nkolesnikov/aspirantura/code/plantdiag-edge/artifacts_pq/c6_mobilenet_v2_int8.onnx",
+    "onnx_int8_sha256": "b13147664f35813ccf0b9b6da684c8019cb265e8e7161e3f7efdda7e78719114"
+  },
+  "quantize_dynamic_degeneracy": {
+    "mobilenet_v2": {
+      "quantized_modules": 0,
+      "size_fp32_mb": 9.032,
+      "size_int8_mb": 9.032,
+      "max_abs_feature_diff": 0.0,
+      "bitwise_identical": true
+    },
+    "resnet50": {
+      "quantized_modules": 0,
+      "size_fp32_mb": 94.245,
+      "size_int8_mb": 94.245,
+      "max_abs_feature_diff": 0.0,
+      "bitwise_identical": true
+    }
+  },
+  "feature_set_agreement": {
+    "onnx_fp32_vs_onnx_int8": {
+      "cosine_mean": 0.9778732061386108,
+      "cosine_min": 0.9518693685531616,
+      "identical": false,
+      "note": "genuine quantization factor: the two graphs must NOT be identical"
+    },
+    "torch_fp32_vs_onnx_fp32": {
+      "cosine_mean": 0.9941421747207642,
+      "cosine_min": 0.9837167859077454,
+      "note": "same weights, different resize filter (bilinear vs bicubic); never mixed in one cell"
+    }
+  },
+  "timing_s": {
+    "torch_fp32/src": 12.8,
+    "torch_fp32/tgt_tr": 3.7,
+    "torch_fp32/tgt_val": 1.2,
+    "onnx_fp32/src": 141.7,
+    "onnx_fp32/tgt_tr": 26.4,
+    "onnx_fp32/tgt_val": 6.8,
+    "onnx_int8/src": 78.3,
+    "onnx_int8/tgt_tr": 22.9,
+    "onnx_int8/tgt_val": 6.0
+  },
+  "total_s": 300.4,
+  "environment": {
+    "hostname": "nkolesnikov-ubuntu",
+    "platform": "Linux-6.17.0-41-generic-x86_64-with-glibc2.42",
+    "machine": "x86_64",
+    "python": "3.13.7",
+    "numpy": "2.5.2",
+    "torch": "2.7.1+cu128",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "onnxruntime": "1.28.0"
+  }
+}

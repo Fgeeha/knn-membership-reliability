@@ -1,0 +1,223 @@
+{
+  "command": "scripts/s3_extract_features.py",
+  "timestamp_utc": "2026-08-16T19:50:04.972180+00:00",
+  "git": {
+    "edge-reliability-gate": "48149a7ace19eadbd3cf2dd1603284343ac2fa1d",
+    "plantdiag-edge": "137600cccf78660847cbd3dd36d5d3b6326ec0a3"
+  },
+  "alignment": {
+    "version": "s3-alignment-v1",
+    "sha256": "6b10c8a6974f5ff5256418860089df0c5c00adaed30c833e0b60acd41e5cd0d0",
+    "file": "/home/nkolesnikov/aspirantura/code/edge-reliability-gate/label_alignment.json"
+  },
+  "split": {
+    "seed": 42,
+    "val_ratio": 0.2,
+    "rule": "per-class stratified"
+  },
+  "preprocessing": {
+    "resize": "PIL Image.resize((224,224)) with library default filter",
+    "scale": "x/255",
+    "normalize_mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "normalize_std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "identical_to": "s2_extract_features.extract_onnx"
+  },
+  "models": {
+    "onnx_fp32": {
+      "path": "/home/nkolesnikov/aspirantura/code/plantdiag-edge/artifacts_pq/c6_mobilenet_v2_fp32.onnx",
+      "sha256": "1e448d9e77e44ec7aca90322525ca96c3c254e376c2d00a7adfc6eda67b80547"
+    },
+    "onnx_int8": {
+      "path": "/home/nkolesnikov/aspirantura/code/plantdiag-edge/artifacts_pq/c6_mobilenet_v2_int8.onnx",
+      "sha256": "b13147664f35813ccf0b9b6da684c8019cb265e8e7161e3f7efdda7e78719114"
+    }
+  },
+  "groups": {
+    "closed": {
+      "n_images": 1768,
+      "n_classes": 13,
+      "n_gallery_pool": 1415,
+      "n_query": 353,
+      "gallery_pool_per_class": {
+        "0": 206,
+        "4": 61,
+        "6": 86,
+        "7": 104,
+        "10": 101,
+        "11": 94,
+        "14": 146,
+        "15": 150,
+        "17": 88,
+        "18": 130,
+        "19": 50,
+        "20": 74,
+        "21": 125
+      },
+      "min_gallery_pool_per_class": 50
+    },
+    "ood_known_crop": {
+      "n_images": 2824,
+      "n_classes": 31
+    },
+    "ood_unseen_crop": {
+      "n_images": 6580,
+      "n_classes": 69
+    },
+    "author_pending": {
+      "n_images": 316,
+      "n_classes": 2
+    }
+  },
+  "caches": {
+    "author_pending_labels.npy": {
+      "shape": [
+        316
+      ],
+      "dtype": "int32",
+      "sha256": "a5707d250a5f56c43844fcfc029f2144d45203d17e6ec836a331eeecf25746af"
+    },
+    "author_pending_onnx_fp32.npy": {
+      "shape": [
+        316,
+        1280
+      ],
+      "dtype": "float32",
+      "sha256": "5013ca99da4efe6f7c871a9ca394eab43cff6398389808756f33358a4b941e5d"
+    },
+    "author_pending_onnx_int8.npy": {
+      "shape": [
+        316,
+        1280
+      ],
+      "dtype": "float32",
+      "sha256": "c3f3f9482173a1f3f29748c153b96888ebb9e5ca749557d29c9dd2ae4c758425"
+    },
+    "closed_labels.npy": {
+      "shape": [
+        1768
+      ],
+      "dtype": "int32",
+      "sha256": "8cd59d1e4be6a13a0e781d5d5efa459bce4aa3c1aba686506acadcf28c21b361"
+    },
+    "closed_onnx_fp32.npy": {
+      "shape": [
+        1768,
+        1280
+      ],
+      "dtype": "float32",
+      "sha256": "af27e58e00d863d89ad047a2a34b961bb037dcf77dd7c9eabdaf506b7bc06ff3"
+    },
+    "closed_onnx_int8.npy": {
+      "shape": [
+        1768,
+        1280
+      ],
+      "dtype": "float32",
+      "sha256": "5f648d5439bdebd8f4297beb753fc2b19ddad860b1cd30d3fd476156d5ea6875"
+    },
+    "closed_query_idx.npy": {
+      "shape": [
+        353
+      ],
+      "dtype": "int32",
+      "sha256": "16dda91577c6e9c216f8546b7573ca75fcb968eb0e56e633315e1b04f5a99f7d"
+    },
+    "closed_train_idx.npy": {
+      "shape": [
+        1415
+      ],
+      "dtype": "int32",
+      "sha256": "0458ae97edea1e7917c2ef43a58db0c3fce97a616f3a4a880a9497a158d42871"
+    },
+    "ood_known_crop_labels.npy": {
+      "shape": [
+        2824
+      ],
+      "dtype": "int32",
+      "sha256": "6bc1eed0a9d1c1542b1c4c39a9b706294e3fbcebbcc0db09813224b978630d30"
+    },
+    "ood_known_crop_onnx_fp32.npy": {
+      "shape": [
+        2824,
+        1280
+      ],
+      "dtype": "float32",
+      "sha256": "c92d2dfb21c5eb6b3f3358f5a4c7dcf2b21f989fa517cc0e5110a3fcc3000b47"
+    },
+    "ood_known_crop_onnx_int8.npy": {
+      "shape": [
+        2824,
+        1280
+      ],
+      "dtype": "float32",
+      "sha256": "52c8be341fab7d668387601aa20eeaffdd1fc3c60ec069f812a0312cc3b5574a"
+    },
+    "ood_unseen_crop_labels.npy": {
+      "shape": [
+        6580
+      ],
+      "dtype": "int32",
+      "sha256": "52ae4f180eae4cfe087be42237797967f964f9462de1a052ee8b6083e76ab97d"
+    },
+    "ood_unseen_crop_onnx_fp32.npy": {
+      "shape": [
+        6580,
+        1280
+      ],
+      "dtype": "float32",
+      "sha256": "8435e3c11838a125d8d96e6d02a04dcdb06d4c53f2c4099d920b4e6128d6378f"
+    },
+    "ood_unseen_crop_onnx_int8.npy": {
+      "shape": [
+        6580,
+        1280
+      ],
+      "dtype": "float32",
+      "sha256": "321b5369a89ab8c38916b871c8be77c9079635c912d5f0279623d56435dff633"
+    }
+  },
+  "canonical_space": {
+    "n_classes": 23,
+    "labels": [
+      "Apple_Scab_Leaf",
+      "Apple_leaf",
+      "Apple_rust_leaf",
+      "Bell_pepper_leaf",
+      "Bell_pepper_leaf_spot",
+      "Blueberry_leaf",
+      "Corn_Gray_leaf_spot",
+      "Corn_leaf_blight",
+      "Corn_rust_leaf",
+      "Peach_leaf",
+      "Potato_leaf_early_blight",
+      "Potato_leaf_late_blight",
+      "Raspberry_leaf",
+      "Soyabean_leaf",
+      "Squash_Powdery_mildew_leaf",
+      "Tomato_Early_blight_leaf",
+      "Tomato_leaf",
+      "Tomato_leaf_bacterial_spot",
+      "Tomato_leaf_late_blight",
+      "Tomato_leaf_mosaic_virus",
+      "Tomato_leaf_yellow_virus",
+      "Tomato_mold_leaf",
+      "grape_leaf"
+    ]
+  },
+  "wall_s": 211.0,
+  "environment": {
+    "hostname": "nkolesnikov-ubuntu",
+    "platform": "Linux-6.17.0-41-generic-x86_64-with-glibc2.42",
+    "machine": "x86_64",
+    "python": "3.13.7",
+    "numpy": "2.5.2"
+  }
+}
