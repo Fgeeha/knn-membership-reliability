@@ -1,0 +1,15 @@
+{
+  "title": "knn-membership-reliability: code, preregistrations and raw results for the study of input membership and decision reliability in compressed plant disease diagnosis",
+  "upload_type": "software",
+  "description": "Code (confidence signals, metrics, two-loop rejection gate), preregistrations (stages S2-S4), rule-based label alignment and raw result files of all runs for the study of what the built-in confidence of a compressed nearest-neighbour plant disease diagnosis pipeline measures. Feature caches are not included: they are derived from datasets whose licences forbid redistribution of derivatives.",
+  "creators": [
+    {
+      "name": "Kolesnikov, Nikita",
+      "affiliation": "Volgograd State Technical University",
+      "orcid": "0009-0008-5480-6137"
+    }
+  ],
+  "license": "MIT",
+  "keywords": ["plant disease diagnosis", "edge computing", "nearest neighbour retrieval", "confidence signal", "selective classification", "out-of-distribution detection", "quantization", "reproducibility"],
+  "language": "eng"
+}
