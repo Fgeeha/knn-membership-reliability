@@ -1,5 +1,7 @@
 # knn-membership-reliability
 
+[![DOI](https://zenodo.org/badge/1424583187.svg)](https://doi.org/10.5281/zenodo.23455769)
+
 Code, preregistrations and raw results for the study *Input membership and decision
 reliability in compressed plant disease diagnosis* (N. S. Kolesnikov, Volgograd State
 Technical University; manuscript in preparation).
@@ -70,6 +72,11 @@ measured on Raspberry Pi 4B (aarch64, Python 3.11.2).
 PolarQuant (3-bit gallery compression after a randomized Walsh–Hadamard rotation) is
 not a contribution of this work; it is taken from TurboQuantCV. iCORAL is an
 incremental form of CORAL (Sun, Feng, Saenko, AAAI 2016).
+
+## Citation
+
+Kolesnikov N. knn-membership-reliability: code, preregistrations and raw results (v1.0.0). Zenodo, 2026.
+https://doi.org/10.5281/zenodo.23455770 — this version; https://doi.org/10.5281/zenodo.23455769 — all versions.
 
 ## Licence
 
